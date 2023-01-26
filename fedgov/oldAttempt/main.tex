@@ -1,0 +1,37 @@
+%% This is main.tex.
+%% 
+%% You'll need to change the title and author fields to reflect your
+%% information.
+%%
+%% Author: Titus Barik (titus@barik.net)
+%% Homepage: http://www.barik.net/sw/ieee/
+%% Reference: http://www.ctan.org/tex-archive/info/simplified-latex/
+
+\documentclass [11pt]{article}
+\setcounter{secnumdepth}{0}
+
+%% \usepackage[
+%% backend=biber,
+%% style=alphabetic,
+%% sorting=ynt
+%% ]{biblatex}
+%% \addbibresource{annot.bib}
+\usepackage[american]{babel} 
+\usepackage{csquotes} 
+\usepackage[style=mla]{biblatex}
+\addbibresource{annot.bib}
+\usepackage{hyperref}
+
+\title{Gun Control\\\medskip An Annotated Bibliography}
+\author{Dean Gadberry (school@deangadberry.com)\\North Central Texas College}
+
+\begin{document}
+\maketitle
+\pagebreak
+\section{Policy Topic}
+I have chosen to write about gun control. This issue is especially prevalent in Texas, since the upheaval following the Uvalde School shooting.
+\nocite{*}
+\printbibliography
+%% \bibliographystyle{IEEEannot}
+%% \bibliography{annot}
+\end{document}

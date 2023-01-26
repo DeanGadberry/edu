@@ -1,0 +1,634 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{10.7758/rsf.2017.3.5.01}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=45c056fad243d7fb82754bb6ba808764}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Philip\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdf77df9dcc178d284c6f2b4ef185ef8}{%
+           family={Pollack},
+           familyi={P\bibinitperiod},
+           given={Harold\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Russell Sage Foundation}%
+      }
+      \strng{namehash}{2893a769988e206e142d53bb8a2b5bec}
+      \strng{fullhash}{2893a769988e206e142d53bb8a2b5bec}
+      \strng{bibnamehash}{2893a769988e206e142d53bb8a2b5bec}
+      \strng{authorbibnamehash}{2893a769988e206e142d53bb8a2b5bec}
+      \strng{authornamehash}{2893a769988e206e142d53bb8a2b5bec}
+      \strng{authorfullhash}{2893a769988e206e142d53bb8a2b5bec}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{23778253, 23778261}
+      \field{journaltitle}{RSF: The Russell Sage Foundation Journal of the Social Sciences}
+      \field{number}{5}
+      \field{title}{Reducing Access to Guns by Violent Offenders}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{2\bibrangedash 36}
+      \range{pages}{35}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/10.7758/rsf.2017.3.5.01
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/10.7758/rsf.2017.3.5.01
+      \endverb
+    \endentry
+    \entry{10.2307/2747449}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a448f4700d71fd1766f8e034ef8a45d6}{%
+           family={Erskine},
+           familyi={E\bibinitperiod},
+           given={Hazel},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Oxford UP, American Association for Public Opinion Research]}%
+      }
+      \strng{namehash}{a448f4700d71fd1766f8e034ef8a45d6}
+      \strng{fullhash}{a448f4700d71fd1766f8e034ef8a45d6}
+      \strng{bibnamehash}{a448f4700d71fd1766f8e034ef8a45d6}
+      \strng{authorbibnamehash}{a448f4700d71fd1766f8e034ef8a45d6}
+      \strng{authornamehash}{a448f4700d71fd1766f8e034ef8a45d6}
+      \strng{authorfullhash}{a448f4700d71fd1766f8e034ef8a45d6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033362X, 15375331}
+      \field{journaltitle}{The Public Opinion Quarterly}
+      \field{number}{3}
+      \field{title}{The Polls: Gun Control}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{36}
+      \field{year}{1972}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{455\bibrangedash 469}
+      \range{pages}{15}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/2747449
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/2747449
+      \endverb
+    \endentry
+    \entry{10.2307/42003075}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cf2c80c9c0b04c49d37c97046155a7f6}{%
+           family={Helmke},
+           familyi={H\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{cf2c80c9c0b04c49d37c97046155a7f6}
+      \strng{fullhash}{cf2c80c9c0b04c49d37c97046155a7f6}
+      \strng{bibnamehash}{cf2c80c9c0b04c49d37c97046155a7f6}
+      \strng{authorbibnamehash}{cf2c80c9c0b04c49d37c97046155a7f6}
+      \strng{authornamehash}{cf2c80c9c0b04c49d37c97046155a7f6}
+      \strng{authorfullhash}{cf2c80c9c0b04c49d37c97046155a7f6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00333352, 15406210}
+      \field{journaltitle}{Public Administration Review}
+      \field{number}{4}
+      \field{title}{Targeting Gun Violence}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{73}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{551\bibrangedash 552}
+      \range{pages}{2}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/42003075
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/42003075
+      \endverb
+    \endentry
+    \entry{10.2307/23365752}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bf960f481230cd44293b58a7c54b1121}{%
+           family={Kleck},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=338a4e484d8d483eb49719987a1c9532}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={E.\bibnamedelimi Britt},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b3e46c9d7acb9f786d3eb02039d19c0b}
+      \strng{fullhash}{b3e46c9d7acb9f786d3eb02039d19c0b}
+      \strng{bibnamehash}{b3e46c9d7acb9f786d3eb02039d19c0b}
+      \strng{authorbibnamehash}{b3e46c9d7acb9f786d3eb02039d19c0b}
+      \strng{authornamehash}{b3e46c9d7acb9f786d3eb02039d19c0b}
+      \strng{authorfullhash}{b3e46c9d7acb9f786d3eb02039d19c0b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Academic Article Abstract:\\What effects do gun control restrictions and gun prevalence have on rates of violence and crime? Data were gathered for all 170 U.S. cities with a 1980 population of at least 100,000. The cities were coded for the presence of 19 major categories of firearms restriction, including both state- and city-level restrictions. Multiple indirect indicators of gun prevalence levels were measured and models of city violence rates were estimated using two-stage least-squares methods. The models covered all major categories of intentional violence and crime which frequently involve guns: homicide, suicide, fatal gun accidents, robbery, and aggravated assaults, as well as rape. Findings indicate that (1) gun prevalence levels generally have no net positive effect on total violence rates, (2) homicide, gun assault, and rape rates increase gun prevalence, (3) gun control restrictions have no net effect on gun prevalence levels, and (4) most gun control restrictions generally have no net effect on violence rates. There were, however, some possible exceptions to this last conclusion—of 108 assessments of effects of different gun laws on different types of violence, 7 indicated good support, and another 11 partial support, for the hypothesis of gun control efficacy. \\[1\baselineskip] Annotation:}
+      \field{issn}{07484518, 15737799}
+      \field{journaltitle}{Journal of Quantitative Criminology}
+      \field{number}{3}
+      \field{title}{The Impact of Gun Control and Gun Ownership Levels on Violence Rates}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{9}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{249\bibrangedash 287}
+      \range{pages}{39}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/23365752
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/23365752
+      \endverb
+    \endentry
+    \entry{10.2307/3488101}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e1a1aace19f1f49cc4e9636a55404eb}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Ik-Whan\bibnamedelima G.},
+           giveni={I\bibinithyphendelim W\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=454f073cb72301dea1679f4c1b201b1e}{%
+           family={Baack},
+           familyi={B\bibinitperiod},
+           given={Daniel\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {[American Journal of Economics}%
+        {Sociology, , Wiley]}%
+      }
+      \strng{namehash}{12c56bbc33898ad6bc83545e1f218f0e}
+      \strng{fullhash}{12c56bbc33898ad6bc83545e1f218f0e}
+      \strng{bibnamehash}{12c56bbc33898ad6bc83545e1f218f0e}
+      \strng{authorbibnamehash}{12c56bbc33898ad6bc83545e1f218f0e}
+      \strng{authornamehash}{12c56bbc33898ad6bc83545e1f218f0e}
+      \strng{authorfullhash}{12c56bbc33898ad6bc83545e1f218f0e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Academic Article Abstract:\\Results from past research on the effectiveness of gun control legislation have been mixed. This study posits that one of the reasons for these conflicting results is the use of individual laws as the major variable. Instead, this study uses a holistic and comprehensive measure of state gun control laws, grouping states into extreme and lax gun control states. A multivariate linear regression analysis is used to investigate the relationship between a set of determinants, including the holistic gun control measure, and firearm deaths per 100,000 inhabitants of each state. The results show that comprehensive gun control legislation indeed lowers the number of gun-related deaths anywhere between one to almost six per 100,000 individuals in those states that have the most extreme gun-related legislation. Our study also reveals that socioeconomic and law enforcement factors play equally important roles in containing gun-related fatalities. These findings suggest that gun-related deaths have a variety of causes and that attempts to legislate a solution to this problem will need to be correspondingly complex and multifaceted. \\[1\baselineskip] Annotation:}
+      \field{issn}{00029246}
+      \field{journaltitle}{The American Journal of Economics and Sociology}
+      \field{number}{2}
+      \field{title}{The Effectiveness of Legislation Controlling Gun Usage: A Holistic Measure of Gun Control Legislation}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{64}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{533\bibrangedash 547}
+      \range{pages}{15}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/3488101
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/3488101
+      \endverb
+    \endentry
+    \entry{10.2307/3053349}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2aa94baa56803fac9ea98578a6e07215}{%
+           family={Loftin},
+           familyi={L\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7793d81a166a9d17de5067827da172eb}{%
+           family={Heumann},
+           familyi={H\bibinitperiod},
+           given={Milton},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=763d97a50415e0c98031ce0f3472fd97}{%
+           family={McDowall},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {[Wiley, Law}%
+        {Society Association]}%
+      }
+      \strng{namehash}{9f6cfd529ed3307a9e6e5e3715008471}
+      \strng{fullhash}{bd133553b3d2c24056b5de1f0c43dd47}
+      \strng{bibnamehash}{9f6cfd529ed3307a9e6e5e3715008471}
+      \strng{authorbibnamehash}{9f6cfd529ed3307a9e6e5e3715008471}
+      \strng{authornamehash}{9f6cfd529ed3307a9e6e5e3715008471}
+      \strng{authorfullhash}{bd133553b3d2c24056b5de1f0c43dd47}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Academic Article Abstract:\\Michigan's Felony Firearm Statute (Gun Law) imposed a two-year mandatory add-on sentence for defendants convicted of possession of a firearm in the commission of a felony. The Law was widely advertised with proponents claiming that it would introduce greater equity in sentences, ensure certainty of punishment, and decrease violent crime in the state. We examine the processing of these Gun Law cases in Detroit Recorders Court, as well as the effects of the law on crime, and find that most of the goals of the Law's proponents are not met. Notwithstanding a rigid prosecutorial policy which prohibited plea bargaining in these gun cases, alternative mechanisms developed to mitigate the Law's effects and, in most instances, to preserve the "going rate" for various crime categories. Similarly, using an interrupted time-series model, we are unable to uncover effects of the law, or the associated publicity campaign, on violent crime. \\[1\baselineskip] Annotation:}
+      \field{issn}{00239216, 15405893}
+      \field{journaltitle}{Law \& Society Review}
+      \field{number}{2}
+      \field{title}{Mandatory Sentencing and Firearms Violence: Evaluating an Alternative to Gun Control}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{17}
+      \field{year}{1983}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{287\bibrangedash 318}
+      \range{pages}{32}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/3053349
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/3053349
+      \endverb
+    \endentry
+    \entry{10.2307/3052950}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79acf756181a0489745da87801029969}{%
+           family={Seitz},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima Thomas},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {[Wiley, Law}%
+        {Society Association]}%
+      }
+      \strng{namehash}{79acf756181a0489745da87801029969}
+      \strng{fullhash}{79acf756181a0489745da87801029969}
+      \strng{bibnamehash}{79acf756181a0489745da87801029969}
+      \strng{authorbibnamehash}{79acf756181a0489745da87801029969}
+      \strng{authornamehash}{79acf756181a0489745da87801029969}
+      \strng{authorfullhash}{79acf756181a0489745da87801029969}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00239216, 15405893}
+      \field{journaltitle}{Law \& Society Review}
+      \field{number}{4}
+      \field{title}{Firearms, Homicides, and Gun Control Effectiveness}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{6}
+      \field{year}{1972}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{595\bibrangedash 613}
+      \range{pages}{19}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/3052950
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/3052950
+      \endverb
+    \endentry
+    \entry{10.2307/1602745}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=076383f8f926867644765462ddc37b46}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Tom\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton U}%
+      }
+      \strng{namehash}{076383f8f926867644765462ddc37b46}
+      \strng{fullhash}{076383f8f926867644765462ddc37b46}
+      \strng{bibnamehash}{076383f8f926867644765462ddc37b46}
+      \strng{authorbibnamehash}{076383f8f926867644765462ddc37b46}
+      \strng{authornamehash}{076383f8f926867644765462ddc37b46}
+      \strng{authorfullhash}{076383f8f926867644765462ddc37b46}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{10548289, 15501558}
+      \field{journaltitle}{The Future of Children}
+      \field{number}{2}
+      \field{title}{Public Opinion about Gun Policies}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{12}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{155\bibrangedash 163}
+      \range{pages}{9}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/1602745
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/1602745
+      \endverb
+    \endentry
+    \entry{10.2307/3006181}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=36c3d95d728a70046e6873394fdcd9bb}{%
+           family={Stolzenberg},
+           familyi={S\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=229a085dcad27400b1d655e1fd56c72a}{%
+           family={D'Alessio},
+           familyi={D\bibinitperiod},
+           given={Stewart\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford UP}%
+      }
+      \strng{namehash}{398854981f216401ec18399c9aa04ba2}
+      \strng{fullhash}{398854981f216401ec18399c9aa04ba2}
+      \strng{bibnamehash}{398854981f216401ec18399c9aa04ba2}
+      \strng{authorbibnamehash}{398854981f216401ec18399c9aa04ba2}
+      \strng{authornamehash}{398854981f216401ec18399c9aa04ba2}
+      \strng{authorfullhash}{398854981f216401ec18399c9aa04ba2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Academic Article Abstract:\\Using four years of county-level data drawn from the National Incident-Based Reporting System (NIBRS) for South Carolina and a pooled cross-sectional time-series research design, we investigate whether gun availability is related to violent crime, gun crime, juvenile gun crime, and violent crimes committed with a knife. We contribute to the literature by distinguishing between illegal and legal gun availability and by using a comprehensive measure of gun crime. Results show a strong positive relationship between illegal gun availability and violent crime, gun crime, and juvenile gun crime. Little or no effect for the legitimate gun availability measure is observed in any of the estimated models. Findings also reveal that illegal guns have little influence on violent crimes committed with a knife. Offenders seem not to be substituting knives or other cutting instruments when illegal firearms become less available. A supplemental analysis also indicates no evidence of simultaneity between gun availability and violent crime. The strong and consistent effect of illegal rather than legal gun availability on violent crime has important policy implications, because it suggests that greater attention should be directed at devising ways for legitimate gun owners to better secure their weapons. \\[1\baselineskip] Annotation:}
+      \field{issn}{00377732, 15347605}
+      \field{journaltitle}{Social Forces}
+      \field{number}{4}
+      \field{title}{Gun Availability and Violent Crime: New Evidence from the National Incident-Based Reporting System}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{78}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{1461\bibrangedash 1482}
+      \range{pages}{22}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/3006181
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/3006181
+      \endverb
+    \endentry
+    \entry{10.2307/44113411}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f145d319414693049080daa7ff91ce3f}{%
+           family={WOLF},
+           familyi={W\bibinitperiod},
+           given={CAROLYN\bibnamedelima REINACH},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fa78879173c9ba4b32e2c8063840dc4}{%
+           family={ROSEN},
+           familyi={R\bibinitperiod},
+           given={JAMIE\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Northwestern U, Northwestern U School of Law]}%
+      }
+      \strng{namehash}{2781b25ac2a989eb1e3e124267e9b13e}
+      \strng{fullhash}{2781b25ac2a989eb1e3e124267e9b13e}
+      \strng{bibnamehash}{2781b25ac2a989eb1e3e124267e9b13e}
+      \strng{authorbibnamehash}{2781b25ac2a989eb1e3e124267e9b13e}
+      \strng{authornamehash}{2781b25ac2a989eb1e3e124267e9b13e}
+      \strng{authorfullhash}{2781b25ac2a989eb1e3e124267e9b13e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Academic Article Abstract:\\Recent gun control legislation aimed at removing guns from the hands of the mentally ill in order to reduce violence is misguided. In fact, this only contributes to the mistaken belief that there is a direct link between mental illness and violence. This Article suggests that instead, policymakers should be focusing on modifying existing restrictive mental health laws and increasing the funding needed to provide adequate mental health services in the community. Family members, the community, and the individuals themselves must have access to adequate resources and support systems to increase the individuar's chance of recovery and stability. In light of recent tragedies, a better solution to reducing gun violence includes offering community programs and preventive training in educational and workplace environments to allow for early detection and intervention. The current system does not support those in need of treatment and only serves to exacerbate the stigma associated with mental illness. \\[1\baselineskip] Annotation:}
+      \field{issn}{00914169}
+      \field{journaltitle}{The Journal of Criminal Law and Criminology (1973-)}
+      \field{number}{4}
+      \field{title}{MISSING THE MARK: GUN CONTROL IS NOT THE CURE FOR WHAT AILS THE U.S. MENTAL HEALTH SYSTEM}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{104}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{851\bibrangedash 878}
+      \range{pages}{28}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/44113411
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/44113411
+      \endverb
+    \endentry
+    \entry{10.2307/586530}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=32487f816f9a1b7d34c26ab446e9e26f}{%
+           family={Wolpert},
+           familyi={W\bibinitperiod},
+           given={Robin\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9c89d90ec5702732e9996dd1379ca4e}{%
+           family={Gimpel},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2bae7697cb9af199414454a030954abe}
+      \strng{fullhash}{2bae7697cb9af199414454a030954abe}
+      \strng{bibnamehash}{2bae7697cb9af199414454a030954abe}
+      \strng{authorbibnamehash}{2bae7697cb9af199414454a030954abe}
+      \strng{authornamehash}{2bae7697cb9af199414454a030954abe}
+      \strng{authorfullhash}{2bae7697cb9af199414454a030954abe}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Academic Article Abstract:\\Numerous studies have found that immediate and tangible self-interest has a minimal influence on public attitudes toward many policy issues. We examine public attitudes toward gun control in order to determine whether gun owners exhibit distinctive policy preferences. Our results indicate that self-interest strongly influences public preferences on gun control and that banning handguns evokes stronger self-interest effects than banning assault weapons or imposing a waiting period on purchases of firearms. We conclude by discussing why gun control evokes self-interested calculations among gun owners, the implications of our findings for self-interest theory, and suggestions for further lines of research. \\[1\baselineskip] Annotation: This is something which I would write}
+      \field{issn}{01909320, 15736687}
+      \field{journaltitle}{Political Behavior}
+      \field{number}{3}
+      \field{title}{Self-Interest, Symbolic Politics, and Public Attitudes toward Gun Control}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{20}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{241\bibrangedash 262}
+      \range{pages}{22}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/586530
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/586530
+      \endverb
+    \endentry
+    \entry{10.2307/1598883}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f89a25ff573f12193882e6b1a9ddb0c}{%
+           family={Zimring},
+           familyi={Z\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {U of Chicago Law Review}%
+      }
+      \strng{namehash}{8f89a25ff573f12193882e6b1a9ddb0c}
+      \strng{fullhash}{8f89a25ff573f12193882e6b1a9ddb0c}
+      \strng{bibnamehash}{8f89a25ff573f12193882e6b1a9ddb0c}
+      \strng{authorbibnamehash}{8f89a25ff573f12193882e6b1a9ddb0c}
+      \strng{authornamehash}{8f89a25ff573f12193882e6b1a9ddb0c}
+      \strng{authorfullhash}{8f89a25ff573f12193882e6b1a9ddb0c}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00419494}
+      \field{journaltitle}{The University of Chicago Law Review}
+      \field{number}{4}
+      \field{title}{Is Gun Control Likely to Reduce Violent Killings?}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{35}
+      \field{year}{1968}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{721\bibrangedash 737}
+      \range{pages}{17}
+      \verb{eprint}
+      \verb JSTOR
+      \endverb
+      \verb{urlraw}
+      \verb www.jstor.org/stable/1598883
+      \endverb
+      \verb{url}
+      \verb www.jstor.org/stable/1598883
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
