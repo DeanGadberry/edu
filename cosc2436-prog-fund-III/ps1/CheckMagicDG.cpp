@@ -1,8 +1,8 @@
 // CheckMagicDG.cpp
 // Dean Gadberry
-// COSC 2436
+// COSC 2436 0400
 // ps1s1p1
-// References
+// References:
 
 #include <iostream>
 #include <string>
@@ -10,7 +10,7 @@
 bool checkSum(int, int, int);
 void runAgain(char);
 
-bool run = 1, r1,r2,r3,c1,c2,c3,d1,d2,d3,d4;
+bool run = 1, r1,r2,r3,c1,c2,c3,d1,d2;
 int arr[9], arrayIterator=0; 
 char yes_or_no;
 std::string magicSquare, missingSums;
