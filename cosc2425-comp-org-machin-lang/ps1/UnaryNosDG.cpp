@@ -6,42 +6,53 @@
 
 #include <iostream>
 
-void runAgain();
-void writeOnes();
+void askToRunAgain();
+void printUnary();
+void promptUser();
+void checkValue();
 
-int positiveNumber, run = 0;
+int positiveNumber, continueRunning = 0;
 
 int main()
 {
     do
     {
-        std::cout
-            <<"Enter a positive number: ";
-
-        std::cin
-            >>positiveNumber;
-
-        std::cout
-            <<positiveNumber
-            <<" in Unary is: ";
-        writeOnes();
-        std::cout
-            <<"0";
-
-        runAgain();
-    } while (run == 1);
+        promptUser();
+        printUnary();
+        askToRunAgain();
+    } while (continueRunning == 1);
 return 0; }
 
-void writeOnes()
+void checkValue()
 {
+    if (positiveNumber <=0 || positiveNumber > 80)
+        promptUser();
+}
+
+void promptUser()
+{
+    std::cout
+        <<"Enter a positive number: ";
+    std::cin
+        >>positiveNumber;
+    checkValue();
+}
+
+void printUnary()
+{
+    std::cout
+        <<positiveNumber
+        <<" in Unary is: ";
     for (int i = 1; i < positiveNumber; i++)
     {
         std::cout
             <<"1";
     }
+    std::cout
+        <<"0";
 }
 
-void runAgain()
+void askToRunAgain()
 {
     char c;
     std::cout
@@ -52,14 +63,14 @@ void runAgain()
     {
         case 'Y':
         case 'y':
-            run = 1;
+            continueRunning = 1;
             break;
         case 'N':
         case 'n':
-            run = 0;
+            continueRunning = 0;
             break;
         default:
-            runAgain();       
+            askToRunAgain();       
     };
 }
 
