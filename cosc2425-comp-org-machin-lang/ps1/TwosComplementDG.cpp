@@ -3,10 +3,10 @@
 // COSC 2425 0400
 // ps1s1p2
 // References:
-        // https://en.wikipedia.org/wiki/Two%27s_complement
-        // https://www.cuemath.com/numbers/decimal-to-binary/
-        // https://stackoverflow.com/questions/8468597/prepend-stdstring
         // https://stackoverflow.com/questions/22746429/c-decimal-to-binary-converting
+            // Used as reference for positiveToBinary()
+        // https://en.wikipedia.org/wiki/Two%27s_complement
+            // Used for sequence to convert positive binary to negative binary
 #include <iostream>
 #include <string>
 
