@@ -11,11 +11,11 @@
 #include <string>
 
 void runAgain();
-void promptUser();
 void convertToBinary();
 std::string positiveToBinary(int);
 std::string negativeConvert(std::string);
 char invert(std::string, int);
+void promptUser();
 
 int run = 0, value; 
 std::string output;
