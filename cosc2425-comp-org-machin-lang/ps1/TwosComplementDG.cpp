@@ -8,6 +8,8 @@
         // https://stackoverflow.com/questions/8468597/prepend-stdstring
         // https://stackoverflow.com/questions/22746429/c-decimal-to-binary-converting
 #include <iostream>
+#include <string>
+
 void runAgain();
 void promptUser();
 void checkValue();
@@ -26,6 +28,7 @@ int main()
         printBinary();
         runAgain();
     } while (run == 1);
+    return 0;
 }
 
 void promptUser()
@@ -86,12 +89,26 @@ char invert(std::string str, int i)
 
 std::string negativeConvert(std::string str)
 {
+    //std::cout<<"ptb "<<str<<std::endl;
     int index = 7;
     bool complete = 0;
     for (int i = 0; i < 8; i++)
     {
         str[i] = invert(str, i);
     };
+    //std::cout<<"inverted "<<str<<std::endl;
+    for (int i = 7; i >= 0; i--)
+    {
+        if (str[i] == '0')
+        {
+            //std::cout<<"last was 0\n";
+            str[i] = invert(str, i);
+            return str;
+        }
+        //std::cout<<"last was 1\n";
+        str[i] = invert(str, i);
+    };
+    /*
     while (complete != 1)
     {
         if (str[index] == '0')
@@ -100,9 +117,10 @@ std::string negativeConvert(std::string str)
             complete = 1;
         }
         else
+            str[index] = invert(str, index);
             index--;
     };
-    return str;
+    */
 }
 
 void printBinary()
