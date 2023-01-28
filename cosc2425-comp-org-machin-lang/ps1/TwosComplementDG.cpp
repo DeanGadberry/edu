@@ -12,8 +12,7 @@
 
 void runAgain();
 void promptUser();
-void checkValue();
-void printBinary();
+void convertToBinary();
 std::string positiveToBinary(int);
 std::string negativeConvert(std::string);
 char invert(std::string, int);
@@ -25,7 +24,7 @@ int main()
 {
     do {
         promptUser();
-        printBinary();
+        std::cout<<value<<" = "<<output<<std::endl;
         runAgain();
     } while (run == 1);
     return 0;
@@ -33,17 +32,13 @@ int main()
 
 void promptUser()
 {
-    std::cout
-        <<std::endl
-        <<"Enter a value: ";
-    std::cin
-        >>value;
-    std::cout
-        <<std::endl;
-    checkValue();
+    std::cout <<std::endl <<"Enter a value: ";
+    std::cin >>value;
+    std::cout <<std::endl;
+    convertToBinary();
 }
 
-void checkValue()
+void convertToBinary()
 {
     if (value >= 0 && value < 128)
     {
@@ -77,6 +72,24 @@ std::string positiveToBinary(int to_binary)
     return binary_form;
 }
 
+std::string negativeConvert(std::string str)
+{
+    for (int i = 0; i < 8; i++)
+    {
+        str[i] = invert(str, i);
+    };
+    for (int i = 7; i >= 0; i--)
+    {
+        if (str[i] == '0')
+        {
+            str[i] = invert(str, i);
+            return str;
+        }
+        str[i] = invert(str, i);
+    };
+    return str;
+}
+
 char invert(std::string str, int i)
 {
     char c;
@@ -85,51 +98,6 @@ char invert(std::string str, int i)
     else
         c = '0';
     return c;
-}
-
-std::string negativeConvert(std::string str)
-{
-    //std::cout<<"ptb "<<str<<std::endl;
-    int index = 7;
-    bool complete = 0;
-    for (int i = 0; i < 8; i++)
-    {
-        str[i] = invert(str, i);
-    };
-    //std::cout<<"inverted "<<str<<std::endl;
-    for (int i = 7; i >= 0; i--)
-    {
-        if (str[i] == '0')
-        {
-            //std::cout<<"last was 0\n";
-            str[i] = invert(str, i);
-            return str;
-        }
-        //std::cout<<"last was 1\n";
-        str[i] = invert(str, i);
-    };
-    /*
-    while (complete != 1)
-    {
-        if (str[index] == '0')
-        {
-            str[index] = invert(str, index);
-            complete = 1;
-        }
-        else
-            str[index] = invert(str, index);
-            index--;
-    };
-    */
-}
-
-void printBinary()
-{
-        std::cout
-            <<value
-            <<" = "
-            <<output
-            <<std::endl;
 }
 
 void runAgain()
@@ -156,6 +124,7 @@ void runAgain()
 }
 
 // https://stackoverflow.com/questions/22746429/c-decimal-to-binary-converting
+// used this to model my positiveToBinary function
 /*
 std::string toBinary(int n)
 {
