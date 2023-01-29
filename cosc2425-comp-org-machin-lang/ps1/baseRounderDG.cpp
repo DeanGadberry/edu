@@ -13,8 +13,7 @@ void round();
 void runAgain();
 int makeInt(int);
 
-int base, decimal, output, working_index, ascii_value;
-double working_number;
+int base, decimal;
 std::string value;
 
 int main()
@@ -37,14 +36,21 @@ void promptUser()
 
 void round()
 {
-    working_index = value.find('.') + decimal + 1;
+    int working_index = value.find('.') + decimal + 1;
 std::cout<<"working_index: "<<working_index<<"\n";
-    working_number = makeInt(working_index);
+    double working_number = makeInt(working_index);
     if (working_number / base > 0.5)
     {
-        working_index = --working_index;
+        working_index--; 
 std::cout<<"working_index: "<<working_index<<"\n";
         working_number = makeInt(working_index);
+        if (working_number == base)
+        {
+            value[working_index] = '0';
+            working_number--;
+            // then need to check it and increment or decrement it....
+            // will probably do this by changing to a function with a do while loop
+        }
     }
 //divide the one after it by the base
 //if this division is greater than or equal to 1/5
