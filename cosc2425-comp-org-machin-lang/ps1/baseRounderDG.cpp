@@ -9,17 +9,31 @@
 #include <string>
 
 void promptUser();
-void round();
+int round();
 void runAgain();
 int makeInt(int);
+char intToChar(int);
 
-int base, decimal;
 std::string value;
+int base, decimal, final_index, index_to_work_with;
+double number_to_work_with;
 
 int main()
 {
     promptUser();
-    round();
+    final_index = value.find('.') + decimal;
+    index_to_work_with = final_index + 1;
+        std::cout<<"index_to_work_with: "<<index_to_work_with<<"\n";
+    number_to_work_with = makeInt(index_to_work_with);
+    if (number_to_work_with / base > 0.5 ) // || number_to_work_with + 1 == base)
+    {
+        round();
+        value[index_to_work_with] = intToChar(number_to_work_with);
+    }
+//    else if (number_to_work_with / base < 0.5)
+//    don't need ^^^^^^^^^ this line
+//        ;
+//        cutNumber();
     runAgain();
     return 0;
 }
@@ -34,30 +48,23 @@ void promptUser()
     std::cin  >> decimal;
 }
 
-void round()
+int round()
 {
-    int working_index = value.find('.') + decimal + 1;
-std::cout<<"working_index: "<<working_index<<"\n";
-    double working_number = makeInt(working_index);
-    if (working_number / base > 0.5)
+    index_to_work_with--; //final_index
+        std::cout<<"index_to_work_with: "<<index_to_work_with<<"\n";
+    if (value[index_to_work_with] == 46)
     {
-        working_index--; 
-std::cout<<"working_index: "<<working_index<<"\n";
-        working_number = makeInt(working_index);
-        if (working_number == base)
-        {
-            value[working_index] = '0';
-            working_number--;
-            // then need to check it and increment or decrement it....
-            // will probably do this by changing to a function with a do while loop
-        }
+        round();
+        return 0;
     }
-//divide the one after it by the base
-//if this division is greater than or equal to 1/5
-    // increment the preceding value
-    // call a function
-        // function checks if the next value can increment
-        // if it can, decrement the index and call the function again
+    number_to_work_with = makeInt(index_to_work_with);
+    if (number_to_work_with++ == base) // this should increment the number
+    {
+        value[index_to_work_with] = '0';
+        round();
+        return 0;
+    }
+    return 0;
 }
 
 int makeInt(int i)
@@ -69,7 +76,7 @@ std::cout<<"ascii: "<<ascii<<std::endl;
 std::cout<<"integer form: "<<ascii - 48 <<std::endl;
         return ascii - 48;
     }
-    else if (ascii < 72 && ascii > 64) // A - G
+    else if (ascii < 71 && ascii > 64) // A - F
     {
 std::cout<<"integer form: "<<ascii-7-48<<std::endl;
         return ascii - 17 + 10 - 48;
