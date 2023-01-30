@@ -15,52 +15,65 @@ int makeInt(int);
 char intToChar(int);
 
 std::string value;
-int base, decimal, final_index, index_to_work_with;
-double number_to_work_with;
+int base, decimal, final_index, value_index;
+double number;
 
 int main()
 {
     promptUser();
     final_index = value.find('.') + decimal;
-    index_to_work_with = final_index + 1;
-        std::cout<<"index_to_work_with: "<<index_to_work_with<<"\n";
-    number_to_work_with = makeInt(index_to_work_with);
-    if (number_to_work_with / base > 0.5 ) // || number_to_work_with + 1 == base)
+    value_index = final_index + 1;
+    number = makeInt(value_index);
+    if (number / base >= 0.5 ) 
     {
         round();
-        value[index_to_work_with] = intToChar(number_to_work_with);
+        value[value_index] = intToChar(number);
     }
-//    else if (number_to_work_with / base < 0.5)
-//    don't need ^^^^^^^^^ this line
-//        ;
-//        cutNumber();
+    std::cout
+        <<"The result in base "
+        <<base
+        <<": ";
+    for (int i = 0; i <= final_index; i++)
+    {
+        std::cout
+            <<value[i];
+    }
+    std::cout
+        <<std::endl;
     runAgain();
     return 0;
 }
 
 void promptUser()
 {
-    std::cout << "Enter a value: ";
+    std::cout << std::endl
+              << "Enter a value: ";
     std::cin  >> value;
     std::cout << "Enter the base of the value: ";
     std::cin  >> base;
     std::cout << "Number of decimal places to round: ";
     std::cin  >> decimal;
+    std::cout << std::endl;
 }
 
 int round()
 {
-    index_to_work_with--; //final_index
-        std::cout<<"index_to_work_with: "<<index_to_work_with<<"\n";
-    if (value[index_to_work_with] == 46)
+    value_index--; 
+    if (value[value_index] == '.')
     {
         round();
         return 0;
     }
-    number_to_work_with = makeInt(index_to_work_with);
-    if (number_to_work_with++ == base) // this should increment the number
+    number = makeInt(value_index);
+    if (++number == base) // This increments regardless 
     {
-        value[index_to_work_with] = '0';
+        value[value_index] = '0';
+        if (value_index == 0 )
+        {
+            value = '1' + value;
+            final_index++;
+            return 0;
+        }
         round();
         return 0;
     }
@@ -69,28 +82,39 @@ int round()
 
 int makeInt(int i)
 {
+    const int 
+        ASCII_0 = 48,
+        ASCII_9 = 57,
+        ASCII_A = 65,
+        ASCII_F = 70;
     int ascii = static_cast<int>(value[i]);
-std::cout<<"ascii: "<<ascii<<std::endl;
-    if (ascii < 9 + 48 && ascii > 0 + 48) // 0 - 9
+    if (ASCII_0 <= ascii && ascii <= ASCII_9)
     {
-std::cout<<"integer form: "<<ascii - 48 <<std::endl;
-        return ascii - 48;
+        return ascii - 48; 
     }
-    else if (ascii < 71 && ascii > 64) // A - F
+    else if (ASCII_A <= ascii && ascii <= ASCII_F)
     {
-std::cout<<"integer form: "<<ascii-7-48<<std::endl;
         return ascii - 17 + 10 - 48;
     }
-    std::cout <<"Please enter only numerals, a decimal, and capital letters.\n";
     main();
     return 0;
+}
+
+char intToChar(int i)
+{
+    if (i > 9)
+    {
+        return i + 7 + 48; //ASCII Character value
+    }
+    return i + 48; //ASCII Numeric Value
 }
 
 void runAgain()
 {
     char c;
     std::cout
-        <<"\nRun Again (Y/N): ";
+        <<std::endl
+        <<"Run Again (Y/N): ";
     std::cin
         >>c;
     switch (c)
@@ -100,7 +124,8 @@ void runAgain()
             main();
         case 'N':
         case 'n':
-            std::cout<<std::endl;
+            std::cout
+                <<std::endl;
             break;
         default:
             runAgain();       

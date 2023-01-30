@@ -53,7 +53,6 @@ void convertToBinary()
         promptUser();
 }
 
-
 std::string positiveToBinary(int to_binary)
 {
     std::string binary_form;
