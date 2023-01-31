@@ -4,6 +4,11 @@
 // ps1s1p4
 // References:
     // https://stackoverflow.com/questions/46271465/find-character-in-a-string
+// 
+// This program rounds any number from any base in range[2,16] 
+// to any number of decimal places
+//
+// See some examples at the bottom of this program
 
 #include <iostream>
 #include <string>
@@ -15,13 +20,21 @@ int makeInt(int);
 char intToChar(int);
 
 std::string value;
-int base, decimal, final_index, value_index;
+int base, decimal_places, final_index, value_index; 
+    // A NOTE 
+    // Do you think that the value_index and final_index would be better
+    // if named as final_pointer and value_pointer?
 double number;
+const int 
+    ASCII_0 = 48,
+    ASCII_9 = 57,
+    ASCII_A = 65,
+    ASCII_F = 70;
 
 int main()
 {
     promptUser();
-    final_index = value.find('.') + decimal;
+    final_index = value.find('.') + decimal_places;
     value_index = final_index + 1;
     number = makeInt(value_index);
     if (number / base >= 0.5 ) 
@@ -52,7 +65,7 @@ void promptUser()
     std::cout << "Enter the base of the value: ";
     std::cin  >> base;
     std::cout << "Number of decimal places to round: ";
-    std::cin  >> decimal;
+    std::cin  >> decimal_places;
     std::cout << std::endl;
 }
 
@@ -82,11 +95,6 @@ int round()
 
 int makeInt(int i)
 {
-    const int 
-        ASCII_0 = 48,
-        ASCII_9 = 57,
-        ASCII_A = 65,
-        ASCII_F = 70;
     int ascii = static_cast<int>(value[i]);
     if (ASCII_0 <= ascii && ascii <= ASCII_9)
     {
@@ -104,9 +112,9 @@ char intToChar(int i)
 {
     if (i > 9)
     {
-        return i + 7 + 48; //ASCII Character value
+        return ASCII_A + i - 10; 
     }
-    return i + 48; //ASCII Numeric Value
+    return ASCII_0 + i; 
 }
 
 void runAgain()
@@ -131,3 +139,39 @@ void runAgain()
             runAgain();       
     };
 }
+
+// EXAMPLES:
+    // $ ./baseRounderDG 
+    // 
+    // Enter a value: 24.5555555
+    // Enter the base of the value: 6
+    // Number of decimal places to round: 5
+    // 
+    // The result in base 6: 25.00000
+    //
+    // Run Again (Y/N): y
+    // 
+    // Enter a value: CC.CCC
+    // Enter the base of the value: 13
+    // Number of decimal places to round: 2
+    // 
+    // The result in base 13: D00.00
+    // 
+    // Run Again (Y/N): y
+    // 
+    // Enter a value: E01.DB9F
+    // Enter the base of the value: 16
+    // Number of decimal places to round: 2
+    // 
+    // The result in base 16: E01.DC
+    // 
+    // Run Again (Y/N): y
+    // 
+    // Enter a value: 09.25D24
+    // Enter the base of the value: 14
+    // Number of decimal places to round: 2
+    // 
+    // The result in base 14: 09.26
+    // 
+    // Run Again (Y/N): n
+    //
