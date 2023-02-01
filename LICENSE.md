@@ -5,7 +5,7 @@
 > Copyright (C) 2023 Dean Gadberry
 
 Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document.
+copies of this software.
 
 > DON'T BE A DICK PUBLIC LICENSE
 > TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
