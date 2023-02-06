@@ -1,0 +1,48 @@
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{hanging}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\section*{\centering{Audience Analysis of Rhetorical Decisions}}
+\begin{center}
+Dean Gadberry
+\end{center}
+This report intends to examine the rhetorical decisions made by authors as they design documents intended for different audiences.
+\section*{Expert Audience: Agriculture Literature Review}
+\textbf{Document Design.}
+
+\par
+\textbf{Style and Tone.}
+
+\textbf{Source Usage.}
+
+\section*{Non-Specialist Audience: "How to Plant a Three Sisters Garden" Article}
+\textbf{Document Design.}
+\par
+\textbf{Style and Tone.}
+
+\textbf{Source Usage.}
+
+\section*{\centering{Works Cited}}
+\begin{hangparas}{2em}{1}
+  Boeckmann, Catherine. “The Three Sisters: Corn, Beans, and Squash.” Almanac.com, The Old Farmer's Almanac, 26 May 2022, https://www.almanac.com/content/three-sisters-corn-bean-and-squash. 
+  \par
+  Ngapo, Tania M., et al. “Historical Indigenous Food Preparation Using Produce of the Three Sisters Intercropping System.” Foods, vol. 10, no. 3, Mar. 2021, p. 524. Crossref, https://doi.org/10.3390/foods10030524.
+\end{hangparas}
+\end{document}

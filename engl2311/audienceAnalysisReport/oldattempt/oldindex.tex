@@ -1,0 +1,94 @@
+    % Set all margins to 1 inch. 
+    % Single space all text. 
+    % Use a plain, professional font like Times New Roman or Arial.
+    % Remove first-line paragraph indentation.
+    % Skip 1 line of space between paragraphs or sections.
+    % Include consistent, contrasting headings and subheadings.
+    % Maintain consistent, simple formatting throughout the document.
+
+% https://olivierpieters.be/blog/2016/08/10/latex-preamble
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[utf8]{inputenc} % not to be used with XeTeX/LuaTeX!
+\usepackage{babel}          % multi-language support
+\usepackage{sectsty}        % allow redefinition of section command formatting
+\usepackage{tabularx}       % more table options
+\usepackage{titling}        % allow redefinition of title formatting
+\usepackage{imakeidx}       % create and index of words
+\usepackage{xcolor}         % more colour options
+\usepackage{enumitem}       % more list formatting options
+\usepackage{tocloft}        % redefine table of contents, new list like objects
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\setlength{\parindent}{0cm}
+\usepackage{lipsum}
+
+
+% choose one of the next 2
+% \setlength{\parskip}{2ex plus 0.5ex minus 0.2ex} % whitespace between paragraphs
+\usepackage{parskip}
+
+% set TOC margins
+% \setlength{\cftbeforesecskip}{15pt} % skip in TOC
+% also possible (incl. variants): \setlength{\cftbeforechapskip}{10pt}
+
+% redefine \maketitle command with nicer formatting
+\pretitle{
+  \begin{flushright}         % align text to right
+    \fontsize{40}{60}        % set font size and whitespace
+    \usefont{OT1}{phv}{b}{n} % change the font to bold (b), normally shaped (n)
+                             %   Helvetica (phv)
+    \selectfont              % force LaTeX to search for metric in its mapping
+                             %   corresponding to the above font size definition
+}
+\posttitle{
+  \par                       % end paragraph
+  \end{flushright}           % end right align
+  \vskip 0.5em               % add vertical spacing of 0.5em
+}
+\preauthor{
+  \begin{flushright}
+    \large                   % font size
+    \lineskip 0.5em          % inter line spacing
+    \usefont{OT1}{phv}{m}{n}
+}
+\postauthor{
+  \par
+  \end{flushright}
+}
+\predate{
+  \begin{flushright}
+  \large
+  \lineskip 0.5em
+  \usefont{OT1}{phv}{m}{n}
+}
+\postdate{
+  \par
+  \end{flushright}
+}
+\fi
+
+\begin{document}
+
+\section{title}
+Bold title (centered)
+Audience Analysis of """
+\endsection
+\section{author}
+not-bold name under title ( centered)
+Dean Gadberry
+\endsection
+
+\section{Document Design}
+
+\endsection
+\section{Style and Tone}
+
+\endsection
+\section{Source Usage}
+
+\endsection
+
+\lipsum{1}
+
+\end{document}

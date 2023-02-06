@@ -1,7 +1,7 @@
-// CheckMagicDG.cpp
+// checkMagicDG.cpp
 // Dean Gadberry
 // COSC 2436 0400
-// ps1s1p1
+// ps1p1
 // References:
 
 #include <iostream>
