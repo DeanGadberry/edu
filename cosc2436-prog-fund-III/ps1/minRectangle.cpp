@@ -5,6 +5,10 @@
 // References:
     // https://stackoverflow.com/questions/8422709/random-boolean-value
     // https://stackoverflow.com/questions/9702053/how-to-declare-a-global-variable-in-c
+    // https://www.youtube.com/watch?v=jn8_Xq3z48w&t=345s
+        // really cool stuff that I decided not to use, 
+        // but after looking at this, I noticed that it'll be 
+        // easier to just allocate the max array and shrink it down later
 
 #include <iostream>
 #include <cstdlib>
@@ -19,6 +23,9 @@ int randomBit();
 void printGrid();
 
 const int MIN_ROWS = 2, MAX_ROWS = 10, MIN_COLUMNS = 2, MAX_COLUMNS = 10;
+
+int grid[MAX_ROWS][MAX_COLUMNS];
+
 int number_of_rows, number_of_columns; 
 
 int main()
@@ -27,6 +34,7 @@ int main()
     promptUser();
     generateGrid();
     printGrid();
+    // next steps here!!!
     runAgain();
 }
 
@@ -70,7 +78,8 @@ void checkInput()
 
 void generateGrid()
 {
-    extern int grid[number_of_rows][number_of_columns];
+    // std::vector<std::vector<int>> grid(number_of_rows, std::vector<int>(number_of_columns));
+    grid[number_of_rows][number_of_columns];
     for (int i = 0; i < number_of_rows; i++)
     {
         for (int j = 0; j < number_of_columns; j++)
@@ -89,6 +98,7 @@ int randomBit()
 void printGrid()
 {
     std::cout
+        <<std::endl
         <<" Generated grid: "
         <<std::endl
         <<std::endl;
@@ -98,7 +108,7 @@ void printGrid()
         {
             std::cout
                 <<" "
-                <<grid[i][j]
+                <<grid[i][j];
         }
         std::cout
             <<std::endl;
@@ -115,11 +125,12 @@ void runAgain()
         >>c;
     switch (c)
     {
-        case 'Y':
-        case 'y':
+        case 'Y': case 'y': 
+        case '1': case '2': case '3': 
+        case '4': case '5': case '6': 
+        case '7': case '8': case '9': 
             main();
-        case 'N':
-        case 'n':
+        case 'N': case 'n': case '0':
             break;
         default:
             runAgain();       
