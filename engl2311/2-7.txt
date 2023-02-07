@@ -1,0 +1,15 @@
+
+regarding the Audience Analysis Report
+    which form of citations?
+    structure:
+        1st audience
+            1
+            2
+            3
+        2nd audience
+            1
+            2
+            3
+        ???
+    may put name on the top corner if I want
+

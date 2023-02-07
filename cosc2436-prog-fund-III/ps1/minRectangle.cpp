@@ -15,12 +15,39 @@
 #include <ctime>
 #include <vector>
 
+class neighborhood // this class stores an initial value and 
+{
+    
+};
+
+// NO! A CLASS!!
+// structure to store neighbors (1-values vertical or horizontal to a primary value)
+    // initial location = pointer to primary value
+    // northern neighbor = pointer to matrix value north of primary value
+    // eastern neighbor = pointer to value east
+    // southern neighbor
+    // western neighbor
+
+// function to return which neighbors 
+    // this is a constructor in the neighbor class
+
+// if else functions to check the equivalence of neighbors...
+    // this seems tedious and difficult to manage
+    // it ought to be a function within the the class, a public function?)
+
+// function to test if a value is a 1
+// function to receive coordinates and find neighbors
+    // this will call the checking if the value is a 1.
+    // in fact, that is an extraneous function
+// if a coordinate is == 0 || coordinate == number_of_* - 1)
+    // check -1 or 0
+
 void promptUser();
-void runAgain();
 void checkInput();
 void generateGrid();
-int randomBit();
 void printGrid();
+// find neighbors
+void runAgain();
 
 const int MIN_ROWS = 2, MAX_ROWS = 10, MIN_COLUMNS = 2, MAX_COLUMNS = 10;
 
@@ -34,6 +61,11 @@ int main()
     promptUser();
     generateGrid();
     printGrid();
+    // program which checks each number in the array 
+        // it finds coordinates of numbers which have neighbors
+        // it calls a function within it 
+        // this internal function is an if else for up left right and down. 
+            // it will return the x,x',y, or y' value
     // next steps here!!!
     runAgain();
 }
@@ -60,13 +92,13 @@ void checkInput()
             || number_of_columns > MAX_COLUMNS)
     {
         std::cout
-            <<"Valid Rows: between "
+            <<"For ROWS, use a number between "
             <<MIN_ROWS
             <<" and "
             <<MAX_ROWS
             <<"."
             <<std::endl
-            <<"Valid Columns: between "
+            <<"For COLUMNS, use a number between "
             <<MIN_COLUMNS
             <<" and "
             <<MAX_COLUMNS
@@ -84,15 +116,9 @@ void generateGrid()
     {
         for (int j = 0; j < number_of_columns; j++)
         {
-            grid[i][j] = randomBit();
+            grid[i][j] = rand() % 2;
         }
     }
-}
-
-int randomBit()
-{
-    // code found on stack exchange
-    return rand() % 2;
 }
 
 void printGrid()
