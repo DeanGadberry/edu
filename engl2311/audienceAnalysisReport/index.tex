@@ -1,3 +1,7 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
 
 \documentclass[12pt,a4paper,english]{article}
 \usepackage{helvet}         % set font to helvetica
@@ -7,6 +11,7 @@
 \usepackage[centering,noheadfoot,margin=1in]{geometry}
 \usepackage{lipsum}
 \setlength{\parindent}{0em}
+\usepackage{parskip}
 \usepackage{hanging}
 
 % https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
@@ -19,26 +24,57 @@
 \AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
 
 \begin{document}
-\section*{\centering{Audience Analysis of Rhetorical Decisions}}
-\begin{center}
+\begin{flushleft}
+
 Dean Gadberry
-\end{center}
-This report intends to examine the rhetorical decisions made by authors as they design documents intended for different audiences.
-\par this will examine and expert and then a layman 
+\par
+ENGL 2311 0400
+\par
+2/9/2023
+
+\section*{\centering{Audience Analysis of Rhetorical Decisions}}
+The following is an examination of the rhetorical decisions made by authors as they design documents intended for different audiences. There is contrast between those articles written for the scholar and those for the layman.
+\par 
+
 \section*{Expert Audience: Agriculture Literature Review}
-\textbf{Document Design.}
-
+Tania Ngapo and others write this compilatory literature review to present an academic perspective of the "Three Sisters planting system". They write for the academic: the scholar.
 \par
-\textbf{Style and Tone.}
 
-\textbf{Source Usage.}
-
-\section*{Non-Specialist Audience: "How to Plant a Three Sisters Garden" Article}
-\textbf{Document Design.}
+\textbf{Document Design.} % sections, headings, fonts, sizes, visuals
 \par
-\textbf{Style and Tone.}
+This agriculture literature review opens with an abstract. This abstract introduces and summarizes the themes presented in the long, nineteen page, article. 
+\par
+It is broken up into smaller sections and subsections. Many of the subsections go into detail about a specific plant in the Three Sisters planting system. The section regarding food preparation even has subsubsections for each meal or dish that can be prepared from each plant. With these, the literature review becomes comprehensive and achieves the goal of compiling historical foods.
+\par
+\textrm{\LaTeX} is a common typesetting program for academic literature and was likely used to write this literature review, considering the section numbering system and the volume of in-text citations.
+\par
+\textbf{Style and Tone.} % formal? Objective? what kind of organization
+\par
+This agriculture literature review is written formally, and while the diction is exceptionally prestigious, the tone is cold and distant, as if one were observing a phenomenon from afar. Dates are referred to frequently to show the validity of the data presented, and all numbers presented are precise.
+\par
+\textbf{Source Usage.} % primary or secondary sources? what kind of data?
+\par
+The authors of this literature review lean heavily on the sixty-five sources referenced at the end. These sources are largely other academic articles, but also include United States Government study data and Canadian Government documents which pertain to historical and regional foods.
 
-\textbf{Source Usage.}
+\section*{Non-Specialist Audience: Website How-To Article}
+Catherine Boeckmann writes with almanac.com to share a step-by-step guide to planting a Three Sisters Garden. She writes for the common person: the layman.
+\par
+
+\textbf{Document Design.} % sections, headings, fonts, sizes, visuals
+\par
+This article has a very short introduction which helps a reader understand the foreign material. This is followed by an easily-skimmed guide to planting the Three Sisters Garden. 
+\par
+The article has section headings in a large, bold font. These are quick-reference locations, short and descriptive of which part of the guide is being presented. There are lists, images, and even a how-to video to go along with the step-by-step instructions for planting. Everything is easy-to-read and proceeds logically.
+
+\textbf{Style and Tone.} % formal? Objective? what kind of organization
+\par
+The author of this article uses a casual and informal tone to educate the layman on the history of the Three Sisters Garden. Many subjective terms are used to describe the efficacy of the garden and opinion of the author.
+\par
+
+\textbf{Source Usage.} % primary or secondary sources? what kind of data?
+\par
+While some links within the article will bring a reader to other articles within almanac.com, most of the links within the article forward to nativeseeds.org, a website for the sale of heritage seeds. The author seems to be advertising by product placement. The links, themselves, are not descriptive of where they link, and the source(nativeseeds.org) is not a reputable source. It is another website written without academic support.
+\pagebreak
 
 \section*{\centering{Works Cited}}
 \begin{hangparas}{2em}{1}
@@ -46,4 +82,5 @@ This report intends to examine the rhetorical decisions made by authors as they 
   \par
   Ngapo, Tania M., et al. “Historical Indigenous Food Preparation Using Produce of the Three Sisters Intercropping System.” Foods, vol. 10, no. 3, Mar. 2021, p. 524. Crossref, https://doi.org/10.3390/foods10030524.
 \end{hangparas}
+\end{flushleft}
 \end{document}

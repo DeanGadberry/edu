@@ -1,0 +1,68 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% % Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{hanging}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\sloppy
+Dean Gadberry
+\par
+HUMA 1301 0312
+\par
+2/9/2023
+
+\section*{\centering{Topic and Preliminary Sources}}
+\textbf{Topic:}
+Enuma Elish: The Mesopotamian Epic of Creation
+
+\section*{Primary Sources:}
+\begin{hangparas}{2em}{1}
+  Langdon, S. (1923). \emph{The Babylonian Epic of Creation Restored From the Recently Recovered Tablets of Assur}. Clarendon Press. https://archive.org/details/babylonianepicof00languoft/page/38/mode/2up
+  \par
+\end{hangparas}
+\hfill
+
+\section*{Secondary Sources:}
+\begin{hangparas}{2em}{1}
+  Peterson, Jordan., and Whanhee (Uploader). (2017, June 12). \emph{Mesopotamian Gods} [Video]. YouTube. https://www.youtube.com/watch?v=JodNMjXphKA
+  \par
+  Helle, Sophus. “The Two-Act Structure: A Narrative Device in Akkadian Epics.” \emph{Journal of Ancient Near Eastern Religions}, vol. 20, no. 2, July 2020, pp. 190–224. EBSCOhost, https://doi-org.northcenttexascollegelibrary.idm.oclc.org/10.1163/15692124-12341315.
+  \par
+Wisnom, Selena. “Marduk the Fisherman.” \emph{Journal of the American Oriental Society}, vol. 141, no. 1, Jan. 2021, pp. 211–14. EBSCOhost, https://doi-org.northcenttexascollegelibrary.idm.oclc.org/10.7817/jameroriesoci.141.1.0211.
+  \par
+  Xiang, Zairong. “Below Either/Or: Rereading Femininity and Monstrosity Inside Enuma Elish.” \emph{Feminist Theology: The Journal of the Britain & Ireland School of Feminist Theology}, vol. 26, no. 2, Jan. 2018, pp. 115–32. EBSCOhost, https://doi-org.northcenttexascollegelibrary.idm.oclc.org/10.1177/0966735017737716.
+  \par
+  Weeks, Noel K. “Myth and Ritual: An Empirical Approach.” \emph{Journal of Ancient Near Eastern Religions}, vol. 15, no. 1, Jan. 2015, pp. 92–111. EBSCOhost, https://doi-org.northcenttexascollegelibrary.idm.oclc.org/10.1163/15692124-12341270.
+  \par
+Tugendhaft, Aaron. “Politics and Time in the Baal Cycle.” \emph{Journal of Ancient Near Eastern Religions}, vol. 12, no. 2, Sept. 2012, pp. 145–57. EBSCOhost, https://doi-org.northcenttexascollegelibrary.idm.oclc.org/10.1163/15692124-12341235.
+\end{hangparas}
+\hfill
+
+\section*{Book Sources:}
+\begin{hangparas}{2em}{1}
+  Campbell, J. (2008). \emph{The Hero with a Thousand Faces}. New World Library.
+  \par
+  Fiero, G. (2010). \emph{The Humanistic Tradition, Book 1: The First Civilizations and the Classical Legacy}. McGraw-Hill Education.
+\end{hangparas}
+\par
+\fussy
+\end{document}

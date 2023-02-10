@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.2)  9 FEB 2023 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.2)  9 FEB 2023 16:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -70,18 +70,7 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count197
 \l__lipsum_a_int=\count198
 \l__lipsum_b_int=\count199
- (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count266
-)) (/usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
 Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
 \h@ngcommawd=\skip49
 \h@ngfstopwd=\skip50
@@ -92,7 +81,7 @@ Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
 \h@ngcolonwd=\skip55
 \h@ngscolonwd=\skip56
 )
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 26.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
@@ -103,20 +92,20 @@ LaTeX Warning: Unused global option(s):
 (./index.aux)
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -154,33 +143,71 @@ LaTeX Font Info:    ... okay on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 39.
+
+Underfull \hbox (badness 6125) in paragraph at lines 39--40
+[]\OT1/phv/m/n/12 Langdon, S. (1923). \OT1/phv/m/sl/12 The Baby-lo-nian Epic of Cre-ation Re-stored From
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\OT1/phv/m/sl/12 the Re-cently Re-cov-ered Tablets of As-sur\OT1/phv/m/n/12 . Claren-don Press.
+ []
+
+
+Underfull \hbox (badness 5924) in paragraph at lines 48--49
+[]\OT1/phv/m/n/12 Helle, So-phus. \The Two-Act Struc-ture: A Nar-ra-tive De-vice in Akka-
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 48--49
+\OT1/phv/m/n/12 dian Epics." \OT1/phv/m/sl/12 Jour-nal of An-cient Near East-ern Re-li-gions\OT1/phv/m/n/12 , vol. 20,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+\OT1/phv/m/n/12 no. 2, July 2020, pp. 190{224. EB-SCO-host, https://doi-
+ []
+
+./index.tex:52: Misplaced alignment tab character &.
+<argument> ...eology: The Journal of the Britain &
+                                                   Ireland School of Feminis...
+l.52 ...ain & Ireland School of Feminist Theology}
+                                                  , vol. 26, no. 2, Jan. 201...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 49.
+(Font)              <12> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
+(Font)              <6> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 68.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 86.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 86.
- [3] (./index.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 2466 strings out of 478287
- 44240 string characters out of 5849290
- 430445 words of memory out of 5000000
- 20670 multiletter control sequences out of 15000+600000
- 478348 words of font info for 46 fonts, out of 8000000 for 9000
+ 1762 strings out of 478287
+ 33037 string characters out of 5849290
+ 416847 words of memory out of 5000000
+ 19983 multiletter control sequences out of 15000+600000
+ 480234 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,77p,518b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on index.pdf (3 pages, 63934 bytes).
+ 68i,8n,77p,359b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on index.pdf (1 page, 53384 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
