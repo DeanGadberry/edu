@@ -18,7 +18,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <vector>
+#include <cmath>
 
 class neighborhood // this class stores an initial value and 
 {
@@ -51,6 +51,7 @@ void promptUser();
 void checkInput();
 void generateGrid();
 void printGrid();
+void whichPower();
 // find neighbors
 void runAgain();
 
@@ -58,14 +59,16 @@ const int MIN_ROWS = 2, MAX_ROWS = 10, MIN_COLUMNS = 2, MAX_COLUMNS = 10;
 
 int grid[MAX_ROWS][MAX_COLUMNS];
 
-int number_of_rows, number_of_columns; 
+int number_of_rows, number_of_columns, power = 0; 
 
 int main()
 {
+    std::cout<<std::endl;
     srand(time(0)); // seed random number generator
     promptUser();
     generateGrid();
     printGrid();
+    whichPower();
     // program which checks each number in the array 
         // it finds coordinates of numbers which have neighbors
         // it calls a function within it 
@@ -115,12 +118,12 @@ void checkInput()
 
 void generateGrid()
 {
-    // std::vector<std::vector<int>> grid(number_of_rows, std::vector<int>(number_of_columns));
     grid[number_of_rows][number_of_columns];
     for (int i = 0; i < number_of_rows; i++)
     {
         for (int j = 0; j < number_of_columns; j++)
         {
+            // this was dynamically allocated, but the grids were symetrical diagonally.
             grid[i][j] = rand() % 2;
         }
     }
@@ -146,6 +149,13 @@ void printGrid()
     }
 }
 
+void whichPower()
+{
+    while (number_of_columns * number_of_rows > pow(2, power))
+    {
+        power++;
+    }
+}
 void runAgain()
 {
     char c;
