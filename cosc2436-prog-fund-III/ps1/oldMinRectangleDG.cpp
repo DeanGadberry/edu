@@ -3,7 +3,7 @@
  * Proprietary and confidential
  * Written by Dean Gadberry <code@deangadberry.com>, 2023
  */
-// minRectangleDG.cpp 
+// minRectangleDG.cpp // old attempt ( not dynamically allocated ) 
 // Dean Gadberry
 // COSC 2436 0400
 // ps1p1
@@ -49,15 +49,15 @@ class neighborhood // this class stores an initial value and
 
 void promptUser();
 void checkInput();
-int* generateGrid();
-void printGrid(int *);
+void generateGrid();
+void printGrid();
 void whichPower();
 // find neighbors
 void runAgain();
 
 const int MIN_ROWS = 2, MAX_ROWS = 10, MIN_COLUMNS = 2, MAX_COLUMNS = 10;
 
-//int grid[MAX_ROWS][MAX_COLUMNS];
+int grid[MAX_ROWS][MAX_COLUMNS];
 
 int number_of_rows, number_of_columns, power = 0; 
 
@@ -66,10 +66,9 @@ int main()
     std::cout<<std::endl;
     srand(time(0)); // seed random number generator
     promptUser();
-    int *grid = generateGrid();
-    printGrid(grid);
+    generateGrid();
+    printGrid();
     whichPower();
-
     // program which checks each number in the array 
         // it finds coordinates of numbers which have neighbors
         // it calls a function within it 
@@ -117,20 +116,20 @@ void checkInput()
     }
 }
 
-int* generateGrid()
+void generateGrid()
 {
-    int *grid = new int[number_of_rows * number_of_columns];
+    grid[number_of_rows][number_of_columns];
     for (int i = 0; i < number_of_rows; i++)
     {
         for (int j = 0; j < number_of_columns; j++)
         {
-            *(grid + i * number_of_columns + j) = rand() % 2;
+            // this was dynamically allocated, but the grids were symetrical diagonally.
+            grid[i][j] = rand() % 2;
         }
     }
-    return grid;
 }
 
-void printGrid(int *grid)
+void printGrid()
 {
     std::cout
         <<std::endl
@@ -143,7 +142,7 @@ void printGrid(int *grid)
         {
             std::cout
                 <<" "
-                <<*(grid + i * number_of_columns + j);
+                <<grid[i][j];
         }
         std::cout
             <<std::endl;
@@ -152,7 +151,6 @@ void printGrid(int *grid)
 
 void whichPower()
 {
-    power = 0;
     while (number_of_columns * number_of_rows > pow(2, power))
     {
         power++;
