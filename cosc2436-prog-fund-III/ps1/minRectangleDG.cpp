@@ -10,20 +10,12 @@
 // References:
     // https://stackoverflow.com/questions/8422709/random-boolean-value
     // https://stackoverflow.com/questions/9702053/how-to-declare-a-global-variable-in-c
-    // https://www.youtube.com/watch?v=jn8_Xq3z48w&t=345s
-        // really cool stuff that I decided not to use, 
-        // but after looking at this, I noticed that it'll be 
-        // easier to just allocate the max array and shrink it down later
+    // https://www.geeksforgeeks.org/how-to-declare-a-2d-array-dynamically-in-c-using-new-operator/
 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
-
-class neighborhood // this class stores an initial value and 
-{
-    
-};
 
 // NO! A CLASS!!
 // structure to store neighbors (1-values vertical or horizontal to a primary value)
@@ -32,21 +24,17 @@ class neighborhood // this class stores an initial value and
     // eastern neighbor = pointer to value east
     // southern neighbor
     // western neighbor
-
 // function to return which neighbors 
     // this is a constructor in the neighbor class
-
 // if else functions to check the equivalence of neighbors...
     // this seems tedious and difficult to manage
     // it ought to be a function within the the class, a public function?)
-
 // function to test if a value is a 1
 // function to receive coordinates and find neighbors
     // this will call the checking if the value is a 1.
     // in fact, that is an extraneous function
 // if a coordinate is == 0 || coordinate == number_of_* - 1)
     // check -1 or 0
-
 void promptUser();
 void checkInput();
 int* generateGrid();
@@ -54,12 +42,18 @@ void printGrid(int *);
 void whichPower();
 // find neighbors
 void runAgain();
+void countGroups(int *);
+void powerFunction(int *,int,int);
 
-const int MIN_ROWS = 2, MAX_ROWS = 10, MIN_COLUMNS = 2, MAX_COLUMNS = 10;
-
-//int grid[MAX_ROWS][MAX_COLUMNS];
-
-int number_of_rows, number_of_columns, power = 0; 
+const int MIN_ROWS = 2,
+      MIN_COLUMNS = 2, 
+      MAX_ROWS = 5, 
+      MAX_COLUMNS = 5;
+int number_of_rows, number_of_columns, power, groups = 0; 
+class neighborhood // this class stores an initial value and 
+{
+    
+};
 
 int main()
 {
@@ -69,7 +63,7 @@ int main()
     int *grid = generateGrid();
     printGrid(grid);
     whichPower();
-
+    countGroups(grid);
     // program which checks each number in the array 
         // it finds coordinates of numbers which have neighbors
         // it calls a function within it 
@@ -77,16 +71,17 @@ int main()
             // it will return the x,x',y, or y' value
     // next steps here!!!
     runAgain();
+    delete[] grid;
 }
 
 void promptUser()
 {
     std::cout
-        <<"Enter the number of rows (2-10): ";
+        <<"Enter the number of rows ("<<MIN_ROWS<<"-"<<MAX_ROWS<<"): ";
     std::cin
         >>number_of_rows;
     std::cout
-        <<"Enter the number of cols (2-10): ";
+        <<"Enter the number of cols ("<<MIN_COLUMNS<<"-"<<MAX_COLUMNS<<"): ";
     std::cin
         >>number_of_columns;
     checkInput();
@@ -158,6 +153,35 @@ void whichPower()
         power++;
     }
 }
+
+void countGroups(int *grid)
+{
+    for (int i = 0; i < number_of_rows; i++)
+    {
+        for (int j = 0; j < number_of_columns; j++)
+        {
+            if ( *(grid + i * number_of_columns + j) = 1)
+            {
+                powerFunction(grid, i, j);
+            }
+        }
+    }
+}
+
+void powerFunction(int *grid, int row_index, int column_index)
+{
+    if (power == 3)
+    {
+        for (int i = row_index; i < number_of_rows; i++)
+        {
+            for (int j = column_index; j < number_of_columns; j++)
+            {
+                std::cout<<"test";
+            }
+        }
+    }
+}
+
 void runAgain()
 {
     char c;
