@@ -1,0 +1,95 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushleft}
+
+To: Lisa Smart (lsmart@nctc.edu) 
+
+From: Dean Gadberry (dgadberry@nctc.edu)
+
+Date: 2/16/2023
+
+Subject: LLELA WildLife and Plant Education
+
+\hfill \break
+\rule{\textwidth}{0.01em} % line break
+\hfill \break
+Hello Professor Smart,
+
+Here at LLELA, we are working to provide opportunities for environmental research and recreational opportunities for North Texas residents.
+This is why we are launching a new initiative to create educational materials for the public. We believe that hands-on learning is the best kind of learning, so we are partnering with various organizations to create educational materials that visitors may pick up and use while they walk the beautiful LLELA trails. 
+
+As our project manager, we are granting you the task of compiling these educational materials and submitting them for approval to John Johnson, head of marketing and community development. 
+
+Provided are the informational websites which will be used to create these new educational pamphlets, coloring books, and signs. 
+
+\hfill \break
+\textbf{Shinners and Mahler's Illustrated Flora of North Central Texas}
+\par
+The Fort Worth Botanical Garden provides some resources on their website which we will use to create educational material about the various plant life found at the Lewisville Lake Environmental Learning Area.
+The illustrations for various species are wonderful aides to the identification of plants. There are descriptions, within the books provided which will educate children and adults about the dangers, benefits, and uses of local plants. 
+
+Please have your team draft some pamphlets, coloring books, and signs with various local plants. Use the images in these books as a reference, but feel free to let creativity be your guide. The signs, being etched in silver and gold, will need to have monochromatic designs, but you can use color on the pamphlets. Please compile the various facts about the plants that you choose to use for these materials and send them to Griselda Mahogany for review.
+
+\hfill\break
+\textbf{Texas Ecoregion maps}
+\par
+Texas is a big place. Many visitors to the LLELA are not from North Dallas. The Texas Ecoregion Maps, provided by the Texas Parks and Wildlife Department, are wonderful resources for those visitors who are joining us from other parts of the state. 
+Our locals, too, will enjoy learning about the ecoregions in the Dallas Fort Worth Area. Ecoregion signs are to be posted to educate visitors about the cross timbers ecoregion and the many interesting aspects of our heritage and home.
+
+Please compile information from this website about each ecoregion, and format it for use on a 40-foot tall map. The interactivity of this exhibit will be to rock-climb on local stones. We will need a list of which types of soil will be used to embed the words, and John Johnson will work with Billy Hilton for the construction.
+
+\hfill\break
+\textbf{Conservation Legacy and Discovery Trunks}
+\par
+The Texas Wildlife Association Foundation provides educational materials and teachers to the North Central Texas area. Conservation Legacy provides a service called "Discovery Trunks". We are inviting Conservation Legacy to bring their Discovery Trunks to the LLELA to share educational material about butterflies, water, bats, birds, and more. This event will bring in a group of young learners who hold the future of our state in their hands.
+
+We need you to call the Texas Wildlife Association Foundation and request a discount, since we are a non-profit organization. Be sure to educate them on how much education means to us. 
+
+\hfill\break
+Thank you for taking time to attend to this new initiative. We, at LLELA, value your hard work and diligence towards success. Please let me know if there is anything else that you need to complete this project. I know we have had a tight budget, ever since buying that gold and silver for the new signs. But, I am sure that we can help your team, financially, if it is necessary to complete this project.
+
+\hfill\break
+Sincerely,
+
+Dean Gadberry
+
+LLELA Chief Financial Officer
+
+www.llela.org
+
+
+\pagebreak
+\section*{\centering{Works Cited}}
+\begin{hangparas}{2em}{1}
+  “Illustrated Flora of North Central Texas Online.” \emph{Botanical Research Institute of Texas and the Fort Worth Botanical Garden}, fwbg.org/research/brit-press/illustrated-flora-of-north-central-texas-online/. Accessed 17 Feb. 2023.
+
+  “Texas Ecoregions — Texas Parks \& Wildlife Department.” \emph{Texas.gov}, 2019, tpwd.texas.gov/education/hunter-education/online-course/wildlife-conservation/texas-ecoregions. Accessed 17 Feb. 2023.
+
+“Youth Education Programs.” \emph{Texas Wildlife Association Foundation}, twafoundation.org/conservation-legacy/youth-education-programs/. Accessed 17 Feb. 2023.
+\end{hangparas}
+\end{flushleft}
+\end{document}
