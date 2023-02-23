@@ -11,48 +11,33 @@
     // https://stackoverflow.com/questions/8422709/random-boolean-value
     // https://stackoverflow.com/questions/9702053/how-to-declare-a-global-variable-in-c
     // https://www.geeksforgeeks.org/how-to-declare-a-2d-array-dynamically-in-c-using-new-operator/
+    // MinRectangles provided by professor Chegwidden 
+        // used, with modifications, to count groups
 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
 
-// NO! A CLASS!!
-// structure to store neighbors (1-values vertical or horizontal to a primary value)
-    // initial location = pointer to primary value
-    // northern neighbor = pointer to matrix value north of primary value
-    // eastern neighbor = pointer to value east
-    // southern neighbor
-    // western neighbor
-// function to return which neighbors 
-    // this is a constructor in the neighbor class
-// if else functions to check the equivalence of neighbors...
-    // this seems tedious and difficult to manage
-    // it ought to be a function within the the class, a public function?)
-// function to test if a value is a 1
-// function to receive coordinates and find neighbors
-    // this will call the checking if the value is a 1.
-    // in fact, that is an extraneous function
-// if a coordinate is == 0 || coordinate == number_of_* - 1)
-    // check -1 or 0
 void promptUser();
 void checkInput();
 int* generateGrid();
 void printGrid(int *);
 void whichPower();
-// find neighbors
 void runAgain();
 void countGroups(int *);
 void powerFunction(int *,int,int);
+void numberOfGroups(int*);
+void findLargestRectangle(int*, int, int, int, int, int*, int*);
+int getMaxHeight(int*, int, int, int, int, int);
 
 const int MIN_ROWS = 2,
       MIN_COLUMNS = 2, 
-      MAX_ROWS = 5, 
-      MAX_COLUMNS = 5;
+      MAX_ROWS = 10, 
+      MAX_COLUMNS = 10;
 int number_of_rows, number_of_columns, power, groups = 0; 
-class neighborhood // this class stores an initial value and 
-{
-    
+
+class group {
 };
 
 int main()
@@ -61,17 +46,15 @@ int main()
     srand(time(0)); // seed random number generator
     promptUser();
     int *grid = generateGrid();
+    std::cout
+        <<std::endl
+        <<" Generated grid: "
+        <<std::endl;
     printGrid(grid);
-    whichPower();
-    countGroups(grid);
-    // program which checks each number in the array 
-        // it finds coordinates of numbers which have neighbors
-        // it calls a function within it 
-        // this internal function is an if else for up left right and down. 
-            // it will return the x,x',y, or y' value
-    // next steps here!!!
+    // whichPower();
+    numberOfGroups(grid);
     runAgain();
-    delete[] grid;
+    delete grid;
 }
 
 void promptUser()
@@ -128,9 +111,6 @@ int* generateGrid()
 void printGrid(int *grid)
 {
     std::cout
-        <<std::endl
-        <<" Generated grid: "
-        <<std::endl
         <<std::endl;
     for (int i = 0; i < number_of_rows; i++)
     {
@@ -145,6 +125,7 @@ void printGrid(int *grid)
     }
 }
 
+/*
 void whichPower()
 {
     power = 0;
@@ -153,7 +134,7 @@ void whichPower()
         power++;
     }
 }
-
+//
 void countGroups(int *grid)
 {
     for (int i = 0; i < number_of_rows; i++)
@@ -167,7 +148,7 @@ void countGroups(int *grid)
         }
     }
 }
-
+//
 void powerFunction(int *grid, int row_index, int column_index)
 {
     if (power == 3)
@@ -180,6 +161,77 @@ void powerFunction(int *grid, int row_index, int column_index)
             }
         }
     }
+}
+*/
+
+void numberOfGroups(int* matrix)
+{
+    int i2, j2, total_rects = 0 ;
+	for (int main_index_1 = 0; main_index_1 < number_of_columns; main_index_1++) {
+		for (int main_index_2 = 0; main_index_2 < number_of_rows; main_index_2++)
+		{
+			if (*(matrix + main_index_1 * number_of_columns + main_index_2) == 1) // the value is 1
+			{
+				findLargestRectangle(matrix, number_of_rows, number_of_columns, main_index_2, main_index_1, &i2, &j2);
+				total_rects++;
+				for (int start_j = main_index_1; start_j <= j2; start_j++)
+				{
+					for (int start_i = main_index_2; start_i <= i2; start_i++)
+					{
+						*(matrix + start_j * number_of_columns + start_i) = 2;
+					}
+				}
+//                printGrid(matrix); //printMatrix(M, r, c);
+			}
+		}
+	}
+    std::cout
+        <<std::endl
+        <<"The least number of rectangles/squares formed is "<<total_rects
+        <<std::endl;
+}
+
+void findLargestRectangle(int* matrix, int rows, int columns, int main_index_2, int main_index_1, int* ei, int* ej)
+{
+	int max_width = 0;
+	int max_height = 0;
+	int max_area_covered = 0;
+	*ei = *ej = -1;
+	for (max_width = 0; 
+            max_width < rows - main_index_2 
+            && (*(matrix + main_index_1 * rows + (main_index_2 + max_width)) != 0); 
+            max_width++)
+	{
+		int height_i = getMaxHeight(matrix, rows, columns, main_index_2, main_index_1, max_width + 1);
+		if (height_i > max_height)
+		{
+			max_height = height_i;
+		}
+		int area_covered = height_i * (max_width + 1);
+		if (area_covered > max_area_covered)
+		{
+			max_area_covered = area_covered;
+			*ei = main_index_2 + max_width;
+			*ej = main_index_1 + height_i - 1;
+		}
+	}
+}
+
+int getMaxHeight(int* M, int r, int c, int i, int j, int w)
+{
+	int j2 = -1;
+	int i2;
+	if (*(M + j * r + i) != 0) {
+		for (j2 = j; j2 < c && *(M + j2 * r + i) != 0; j2++)
+		{
+			for (i2 = i; i2 - i < w; i2++)
+			{
+				if (*(M + r * j2 + i2) == 0)
+					return j2 - j;
+			}
+		}
+	}
+	return j2 - j;
 }
 
 void runAgain()
