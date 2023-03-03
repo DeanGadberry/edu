@@ -1,0 +1,60 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushleft}
+
+Dean Gadberry\\
+1947 Colorado Blvd APT C\\
+Denton, TX 76205\\
+469-420-0771
+
+\par
+
+To whom it may concern,
+
+I am writing to inform you of my interest in your job offering: Financial Operations Associate. It is my pleasure to tell you that you may finish your search for a qualified, driven individual to fulfill this role. I recently viewed this listing on indeed.com, and did not hesitate to apply immediately.
+
+I am currently working with Classy Closets of DFW in an accounts payable/receivable \& payroll position. I am intimately involved in the operations of this small business. Within this role, I have led our accounting team in compiling standard operating procedures. I have written over 200 pages of information regarding our QuickBooks standards, Customer Relations Management, and Record Keeping. My skills are esteemed by my colleages and managers. 
+
+I am interested in joining a company which values, not only my skills, but also my integrity, inclusivity, and excellence; a company which is commited to the success of their community. 
+
+I am excited to indulge in the opportunity to thrive on providing exceptional client services while living a true work-life balance.
+
+I look forward to hearing from you.
+
+\hfill\break
+\hfill\break
+\hfill\break
+Sincerely,
+
+Dean Gadberry \\
+\href{https://www.deangadberry.com}{\texttt{DeanGadberry.com}}\\
+\href{mailto:contact@deangadberry.com}{\texttt{contact@DeanGadberry.com}}\\
+
+\end{flushleft}
+\end{document}
