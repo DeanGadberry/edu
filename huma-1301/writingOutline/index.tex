@@ -1,0 +1,91 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{hanging}
+
+% https://tex.stackexchange.com/questions/8845/how-to-move-page-number
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\rfoot{\thepage}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\pagestyle{fancy}
+\begin{document}
+\sloppy
+Dean Gadberry
+\par
+HUMA 1301 0312
+\par
+3/9/2023
+
+\section*{\centering{Research Paper Outline}}
+\textbf{Topic:}
+What does a study of the Enuma Elish reveal about the ancient perspective on the nature of the world, people, culture, art, and war?
+\begin{enumerate}
+    \item Introduction
+    \begin{enumerate}
+        \item Hook
+        \item Background information on the Enuma Elish
+        \item Thesis statement (What can we learn about the ancient perspective on \textbf{the nature of the world, people, culture, art and war} from the Enuma Elish?)
+    \end{enumerate}
+    \item Overview of the Enuma Elish
+      \begin{enumerate}
+        \item Summary of the creation myth
+        \item Overview of the gods 
+        \item Key themes
+      \end{enumerate}
+    \item The ancient perspective on The Nature of the World
+      \begin{enumerate}
+        \item the creation of the universe
+        \item what is time
+        \item the role of humans and gods
+        \item natural disasters
+      \end{enumerate}
+    \item The ancient perspective on People
+      \begin{enumerate}
+        \item humanity and the human condition
+        \item health and disease
+        \item justice, morality, and social order
+        \item the afterlife and soul
+      \end{enumerate}
+    \item The ancient perspective on Art and Culture
+      \begin{enumerate}
+        \item purpose and function of art
+        \item what is beautiful, creation, innovation?
+        \item religious and mythological art
+      \end{enumerate}
+    \item The ancient perspective on War
+      \begin{enumerate}
+        \item causes of war
+        \item ethics of war
+        \item religious and mythological roles in justifying and condemning combat
+      \end{enumerate}
+    \item Conclusion
+    \begin{enumerate}
+      \item summarize ancient perspective
+      \item restate thesis
+      \item why this is important today
+    \end{enumerate}
+  \item Works Cited Page
+\end{enumerate}
+\fussy
+\end{document}
