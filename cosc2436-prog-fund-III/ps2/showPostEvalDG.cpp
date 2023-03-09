@@ -16,7 +16,6 @@
 #include <sstream>
 #include <vector>
 #include <string>
-#include <algorithm>
 
 void runAgain();
 void stackNumbersList(std::vector<std::string>);
