@@ -6,7 +6,7 @@
 // showPostEvalDG.cpp 
 // Dean Gadberry
 // COSC 2436 0400
-// ps2p3
+// Problem Set 2, Problem 3
 // References:
     // https://stackoverflow.com/questions/31225418/how-to-put-words-from-a-sentence-input-into-an-array-c
         // used to convert string into individual operations 
