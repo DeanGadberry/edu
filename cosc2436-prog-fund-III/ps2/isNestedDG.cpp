@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 void runAgain();
 
@@ -23,20 +24,43 @@ int main()
     std::getline(std::cin, equation);
     int parentheses, brackets, braces;
     parentheses = brackets = braces = 0;
+    std::vector<char> delimeter_list;
+    delimeter_list.clear();
     for (int i = 0; i < equation.length(); i++)
     {
         if (equation[i] == '(')
+        {
             parentheses++;
+            delimeter_list.push_back('(');
+            std::cout<<*delimeter_list.end();
+        }
         else if (equation[i] == ')')
+        {
             parentheses--;
+            if (*delimeter_list.end() == '(')
+            {
+                std::cout<<*delimeter_list.end();
+                delimeter_list.pop_back();
+            }
+        }
         else if (equation[i] == '[')
+        {
             brackets++;
+            delimeter_list.push_back('[');
+        }
         else if (equation[i] == ']')
+        {
             brackets--;
+        }
         else if (equation[i] == '{')
+        {
             braces++;
+            delimeter_list.push_back('{');
+        }
         else if (equation[i] == '}')
+        {
             braces--;
+        }
         else
             break;
     }

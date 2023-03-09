@@ -23,38 +23,61 @@ std::string operation(int, int, std::vector<std::string>*, std::string); // std:
 
 int main()
 {
+    //
+    // receive user input
+    //
     std::cout
         <<std::endl
         <<"Enter a postfix expression: ";
     std::string postfix_expression;
     std::getline(std::cin, postfix_expression);
+    //
     // convert postfix_expression into individual operations
+    // store in vector
+    //
     std::istringstream input(postfix_expression);
     std::string individual_operation;
     std::vector<std::string> all_operations;
     while (input >> individual_operation)
         all_operations.push_back(individual_operation);
+    //
+    // define vector to store values to be read on the screen
+    //
+    std::vector<std::string> stack;
+    // initial cout for formatting
     std::cout
         <<std::endl
         <<std::endl
         <<"Stack Contents:"
         <<std::endl
         <<std::endl;
-    std::vector<std::string> stack;
+    //
+    // Check each expression 
+    //
     for (auto&& individual_operation : all_operations)
     {
+        // test for math operations before integers
+            // this will always be skipped 
+            // when expressions are entered correctly
         if (
                 individual_operation == "+" || 
                 individual_operation == "-" || 
                 individual_operation == "*" || 
                 individual_operation == "/" )
         {
+
+            // define indexes of most recently recorded stack integers
+                // (these are the last two numbers on the stack)
             int last_element_index = stack.size() - 1;
             int second_to_last_element_index = last_element_index - 1;
+            // set the second-to-last integer 
+            // equal to the calculation of the last 2
+            // using the individual operation  
             stack.at(second_to_last_element_index) = operation(second_to_last_element_index, last_element_index, &stack, individual_operation);
             stack.pop_back();
             stackNumbersList(stack);
         }
+        // test if the string can be converted to an integer
         else if (stoi(individual_operation))
         {
             stack.push_back(individual_operation);
