@@ -32,14 +32,12 @@ int main()
         {
             parentheses++;
             delimeter_list.push_back('(');
-            std::cout<<*delimeter_list.end();
         }
         else if (equation[i] == ')')
         {
             parentheses--;
-            if (*delimeter_list.end() == '(')
+            if (delimeter_list.back() == '(')
             {
-                std::cout<<*delimeter_list.end();
                 delimeter_list.pop_back();
             }
         }
@@ -51,6 +49,10 @@ int main()
         else if (equation[i] == ']')
         {
             brackets--;
+            if (delimeter_list.back() == '[')
+            {
+                delimeter_list.pop_back();
+            }
         }
         else if (equation[i] == '{')
         {
@@ -60,12 +62,15 @@ int main()
         else if (equation[i] == '}')
         {
             braces--;
+            if (delimeter_list.back() == '{')
+            {
+                delimeter_list.pop_back();
+            }
         }
-        else
-            break;
+        else{}
     }
     std::cout<<std::endl;
-    if (parentheses + brackets + braces == 0)
+    if (parentheses + brackets + braces == 0 && delimeter_list.empty())
         std::cout<<"Is nested correctly";
     else
         std::cout<<"Is not nested correctly";
