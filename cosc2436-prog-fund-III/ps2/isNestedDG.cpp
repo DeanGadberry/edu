@@ -7,7 +7,7 @@
 // Dean Gadberry
 // COSC 2436 0400
 // Problem Set 2, Problem 2
-// References:
+// References: N/A
 
 #include <iostream>
 #include <string>
