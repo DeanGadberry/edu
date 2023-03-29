@@ -21,20 +21,25 @@ int evaluatePostfix(string exp)
         // how are you going to deal with multiple-digit integers
         if (isdigit(exp[count]))
         {
-        std::cout<<"is digit";
+        std::cout<<"is digit (if statement)"<<std::endl; // to test when this runs
             st.push(exp[count] - '0');
             cout << "After push operation: " << exp[count] << endl;
         }
 
         else
         {
+        std::cout<<"is not digit (else statement)"<<std::endl; // to test when this runs
             // core dumps when this is encountered.
             // you need to deal with spaces. 
             int val1 = st.top();
-            st.pop(); // this deletes the 1 digit which you loaded  
+            st.pop(); // try removing this line, and see what happens
+                      // why? 
+                      // this deletes the 1 digit which you loaded  
                       // when you called st.push();
             int val2 = st.top();
-            st.pop(); // this tries to delete something from the stack
+            st.pop(); // try removing htis line, and see what happens
+                      // why?
+                      // this tries to delete something from the stack
                       // but, the digit is already gone
                       // segmentation fault - core dumps.
             switch (exp[count])
