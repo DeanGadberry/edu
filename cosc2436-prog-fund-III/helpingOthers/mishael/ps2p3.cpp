@@ -1,3 +1,9 @@
+//
+//
+// Deal with your spaces problem
+// see comments for details
+//
+//
 #include <iostream>
 #include <string>
 #include <stack>
@@ -10,19 +16,27 @@ int evaluatePostfix(string exp)
 
     for (int count = 0; count < exp.size(); count++)
     {
+    // What are the various cases that need to be checked?
+        // how are you going to deal with spaces?
+        // how are you going to deal with multiple-digit integers
         if (isdigit(exp[count]))
         {
+        std::cout<<"is digit";
             st.push(exp[count] - '0');
             cout << "After push operation: " << exp[count] << endl;
-    
         }
 
         else
         {
+            // core dumps when this is encountered.
+            // you need to deal with spaces. 
             int val1 = st.top();
-            st.pop();
+            st.pop(); // this deletes the 1 digit which you loaded  
+                      // when you called st.push();
             int val2 = st.top();
-            st.pop();
+            st.pop(); // this tries to delete something from the stack
+                      // but, the digit is already gone
+                      // segmentation fault - core dumps.
             switch (exp[count])
             {
             case '+':
@@ -38,7 +52,6 @@ int evaluatePostfix(string exp)
             case '/':
                 st.push(val2 / val1);
                 break;
-
             }
         }
     }
