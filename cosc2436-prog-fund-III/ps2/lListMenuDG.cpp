@@ -10,11 +10,12 @@
 // References:
     // https://stackoverflow.com/questions/39443349/how-to-display-horizontally-in-c
     // https://stackoverflow.com/questions/5029840/convert-char-to-int-in-c-and-c
+    // https://stackoverflow.com/questions/16747591/how-to-get-an-element-at-specified-index-from-c-list
+        // This reference really drove home the fact that the stl list is still a class
 
 #include <iostream>
 #include <string>
 #include <list>
-#include <iterator>
 #include <sstream>
 #include <iomanip>
 
@@ -67,7 +68,7 @@ int menu(std::list<int> the_list)
         <<"| 4. Print   | 9. Shift   |"<<std::endl
         <<"| 5. Size    | 0. Clear   |"<<std::endl
         <<"+------------+------------+"<<std::endl
-        <<"| H. Help    | Q. Quit    |"<<std::endl
+        <<"|            | Q. Quit    |"<<std::endl
         <<"+-------------------------+"<<std::endl
         <<std::endl
         <<"Make a selection: ";
@@ -83,7 +84,6 @@ int menu(std::list<int> the_list)
         case '8':  listRotate(the_list); break;
         case '9':   listShift(the_list); break;
         case '0':   listClear(the_list); break;
-        case 'H': case 'h': help(); menu(the_list); break;
         case 'Q': case 'q': break;
         default: std::cout<<std::endl<<"Please enter an integer from the Menu."<<std::endl; menu(the_list); break;
     }
@@ -201,6 +201,11 @@ int listSearch(std::list<int> the_list)
 
 int listPrint(std::list<int> the_list)
 {
+    if (the_list.size() == 0)
+    {
+        menu(the_list);
+        return 0;
+    }
     std::ostringstream line_a, line_b, line_c, line_d;
     int last_value, output_number;
     for (std::list<int>::iterator iter = the_list.begin(); iter != the_list.end(); iter++)
@@ -260,73 +265,66 @@ int listSize(std::list<int> the_list)
 
 int listSort(std::list<int> the_list)
 {
-//  bool swap;
-//  do {
-//      swap = false;
-//      for (std::list<int>::iterator iter = the_list.begin(); iter != the_list.end(); iter++)
-//      {
-//          if (*iter == *the_list.end()) 
-//              continue;
-//          //continue here
-//      };
-// sort   - implement a sort function through a loop of the elements
-    std::cout<<"sort"<<std::endl;
+    the_list.sort();
+    menu(the_list);
     return 0;
 };
 
 int listReverse(std::list<int> the_list)
 {
-// reverse- list.reverse()
-    std::cout<<"reverse"<<std::endl;
+    the_list.reverse();
+    menu(the_list);
     return 0;
 };
 
 int listRotate(std::list<int> the_list)
 {
-// rotate - check if the list has only 1 element or less (no effect)
-    // temporary list which receives all 
-    // of the primary list elements shifted by 1
-    // copy temporary list to primary and delete all of temporary list
-    std::cout<<"rotate"<<std::endl;
+    if (the_list.size() < 2)
+    {
+        menu(the_list);
+        return 0;
+    }
+    int temporary = the_list.front();
+    the_list.push_back(temporary);
+    menu(the_list);
     return 0;
 };
 
 int listShift(std::list<int> the_list)
 {
-// shift  - check element length
-            // temp list which receives all even numbered values
-            // and then the odd number values after that
-            // then copy the temp list to the primary and delete the temp
-    std::cout<<"shift"<<std::endl;
+    if (the_list.size() < 2)
+    {
+        menu(the_list);
+        return 0;
+    }
+    std::list<int> temporary_list;
+    int iterator = 0;
+    for (auto&& value : the_list)
+    {
+        if (++iterator % 2 == 0)
+        {
+            temporary_list.push_back(value);
+        }
+    }
+    for (auto&& value : the_list)
+    {
+        if (++iterator % 2 == 1)
+        {
+            temporary_list.push_back(value);
+        }
+    }
+    the_list.swap(temporary_list);
+    menu(the_list);
     return 0;
 };
 
 int listClear(std::list<int> the_list)
 {
-// clear  - list.erase(firstIter, lastIter)
-    std::cout<<"clear"<<std::endl;
-    return 0;
-};
-
-int help()
-{
-    // Error check user input function
-// insert - push_back and push_front
-// delete - pop_front and pop_back
-// search - for each of the elements, check if they equal the search term
-// print  - for each element, if it isn't the end, apend with the arrows
-// size   - for each element, increment a counter
-// sort   - implement a sort function through a loop of the elements
-// reverse- list.reverse()
-// rotate - check if the list has only 1 element or less (no effect)
-            // temporary list which receives all 
-            // of the primary list elements shifted by 1
-            // copy temporary list to primary and delete all of temporary list
-// shift  - check element length
-            // temp list which receives all even numbered values
-            // and then the odd number values after that
-            // then copy the temp list to the primary and delete the temp
-// clear  - list.erase(firstIter, lastIter)
-// help   - maybe list this stuff
+    the_list.erase(the_list.begin(), the_list.end());
+    std::cout
+        <<std::endl
+        <<"Empty List"
+        <<std::endl;
+    menu(the_list);
     return 0;
 };
