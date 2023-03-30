@@ -14,6 +14,7 @@
 #include <iostream>
 #include <string>
 #include <list>
+#include <iterator>
 #include <sstream>
 #include <iomanip>
 
@@ -200,34 +201,27 @@ int listSearch(std::list<int> the_list)
 
 int listPrint(std::list<int> the_list)
 {
-    std::list<int>::iterator iter;
-    int length_of_list = 0;
-    for (auto&& value : the_list)
-        length_of_list++;
-    std::ostringstream 
-        line_a,
-        line_b,
-        line_c,
-        line_d;
+    std::ostringstream line_a, line_b, line_c, line_d;
+    int last_value, output_number;
     for (std::list<int>::iterator iter = the_list.begin(); iter != the_list.end(); iter++)
     {
-        std::cout<<*the_list.end()<<std::endl;
-        if (*iter == *the_list.end()) 
+        if (*iter == the_list.back()) 
         {
-            std::cout<<"skpping the last iteration";
+            last_value = *iter;
             continue;
         }
         line_a <<std::setw(16) <<"+-----+--+      ";
         line_b <<std::setw(16) <<"|     |  | ---> ";
-        line_c <<"|  " <<*iter <<"  |  |      ";
+        line_c <<"|  " <<*iter<<"  |  |      ";
         line_d <<std::setw(16) <<"+-----+--+      ";
     };
     std::cout
+        <<std::endl
         <<line_a.str() <<"+-----+--+"
         <<std::endl
         <<line_b.str() <<"|     |\\ |"
         <<std::endl
-        <<line_c.str() <<"|  "<<*the_list.end() <<"  | \\|"
+        <<line_c.str() <<"|  "<<last_value <<"  | \\|"
         <<std::endl
         <<line_d.str() <<"+-----+--+"
         <<std::endl;
