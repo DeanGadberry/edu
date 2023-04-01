@@ -12,6 +12,16 @@
     // https://stackoverflow.com/questions/5029840/convert-char-to-int-in-c-and-c
     // https://stackoverflow.com/questions/16747591/how-to-get-an-element-at-specified-index-from-c-list
         // This reference really drove home the fact that the stl list is still a class
+// 
+// TODO:
+    // rotate does not work properly
+        // clear the temp after rotate
+    // shift does not work properly
+    // delete
+        // after a rotate, things function oddly
+    // search
+        // tell where the value is (within the list)
+        // cout when value is not found
 
 #include <iostream>
 #include <string>
@@ -286,6 +296,7 @@ int listRotate(std::list<int> the_list)
     }
     int temporary = the_list.front();
     the_list.push_back(temporary);
+
     menu(the_list);
     return 0;
 };
