@@ -107,22 +107,22 @@ void stackNumbersList(std::vector<std::string> stack)
 
 std::string operation(int index_for_value1, int index_for_value2, std::vector<std::string> *stack, std::string operation)
 {
-    int final_value,
+    int value_after_operation,
         v1 = std::stoi(stack->at(index_for_value1)),
         v2 = std::stoi(stack->at(index_for_value2));
     if (operation == "+")
-        final_value = v1 + v2;
+        value_after_operation = v1 + v2;
     if (operation == "-")
-        final_value = v1 - v2;
+        value_after_operation = v1 - v2;
     if (operation == "*")
-        final_value = v1 * v2;
+        value_after_operation = v1 * v2;
     if (operation == "/")
-        final_value = v1 / v2;
+        value_after_operation = v1 / v2;
     std::cout
         <<"After "
         <<operation
         <<" operation:";
-    return std::to_string(final_value);
+    return std::to_string(value_after_operation);
 }
 
 void runAgain()

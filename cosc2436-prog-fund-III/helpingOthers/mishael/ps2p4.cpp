@@ -18,7 +18,7 @@ int listReverse(list<int> the_list);
 int listRotate(list<int> the_list);
 int listShift(list<int> the_list);
 int listClear(list<int> the_list);
-int Options(list<int> the_list);
+int options(list<int> the_list);
 
 
 char userInput()
@@ -92,14 +92,3 @@ int main()
         options(the_list);
     return 0;
 }
-int listInsert(list<int> the_list);
-int listDelete(list<int> the_list);
-int listSearch(list<int> the_list);
-int listPrint(list<int> the_list);
-int listSize(list<int> the_list);
-int listSort(list<int> the_list);
-int listReverse(list<int> the_list);
-int listRotate(list<int> the_list);
-int listShift(list<int> the_list);
-int listClear(list<int> the_list);
-int Options(list<int> the_list);
