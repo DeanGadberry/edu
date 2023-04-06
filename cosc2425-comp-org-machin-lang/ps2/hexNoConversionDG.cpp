@@ -19,8 +19,8 @@ int main()
     //
     std::cout
         <<std::endl
-        <<"Enter a postfix expression: ";
-    std::string postfix_expression;
+        <<"Enter a decimal integer: ";
+    std::string decimal_integer;
 
 return 0;}
 
