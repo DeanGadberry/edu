@@ -7,3 +7,7 @@
 *.blg
 *.out
 *.exe
+cosc2425-comp-org-machin-lang/ps2/assemblyExamples/PartsOfNumber.asm
+cosc2425-comp-org-machin-lang/ps2/assemblyExamples/PositiveNegative.asm
+cosc2425-comp-org-machin-lang/ps2/hello-DOS.asm
+cosc2425-comp-org-machin-lang/ps2/assemblyExamples/RevDigits.asm
