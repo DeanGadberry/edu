@@ -1,0 +1,53 @@
++dean@t14:~/doc/edu/cosc2436-prog-fund-III/ps1$ ./diffyGameDG 
+
+Enter 4 integer numbers cockwise: 6 -2 3 5
+
+The values for each of the corners:
+8 5 2 1 
+3 3 1 7 
+0 2 6 4 
+2 4 2 4 
+2 2 2 2 
+0 0 0 0 
+
+Number of steps: 6
+
+Run Again (Y/N): y
+
+Enter 4 integer numbers cockwise: 1 2 4 3
+
+The values for each of the corners:
+1 2 1 2 
+1 1 1 1 
+0 0 0 0 
+
+Number of steps: 3
+
+Run Again (Y/N): y
+
+Enter 4 integer numbers cockwise: 599 -1020 499929 -20002
+
+The values for each of the corners:
+1619 500949 519931 20601 
+499330 18982 499330 18982 
+480348 480348 480348 480348 
+0 0 0 0 
+
+Number of steps: 4
+
+Run Again (Y/N): y
+
+Enter 4 integer numbers cockwise: 299 298 2003 3384
+
+The values for each of the corners:
+1 1705 1381 3085 
+1704 324 1704 3084 
+1380 1380 1380 1380 
+0 0 0 0 
+
+Number of steps: 4
+
+Run Again (Y/N): n
+
+
+

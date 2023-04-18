@@ -1,0 +1,13 @@
++dean@t14:~/.2436/ps2$ ./isNestedDG 
+
+Enter an equation: (){}({}) 
+
+Is nested correctly
+
+Run Again (Y/N): y
+
+Enter an equation: (){}({)}
+
+Is not nested correctly
+
+Run Again (Y/N): n

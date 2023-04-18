@@ -1,0 +1,61 @@
++dean@t14:~/.2425/ps1$ ./twosComplementDG 
+
+Enter a value: 15
+
+15 = 00001111
+
+Run Again (Y/N): y
+
+Enter a value: -48
+
+-48 = 11010000
+
+Run Again (Y/N): y
+
+Enter a value: -100
+
+-100 = 10011100
+
+Run Again (Y/N): y
+
+Enter a value: 100
+
+100 = 01100100
+
+Run Again (Y/N): y
+
+Enter a value: 50
+
+50 = 00110010
+
+Run Again (Y/N): y
+
+Enter a value: 49
+
+49 = 00110001
+
+Run Again (Y/N): y
+
+Enter a value: 48
+
+48 = 00110000
+
+Run Again (Y/N): y
+
+Enter a value: -45
+
+-45 = 11010011
+
+Run Again (Y/N): y
+
+Enter a value: -46
+
+-46 = 11010010
+
+Run Again (Y/N): y
+
+Enter a value: -47
+
+-47 = 11010001
+
+Run Again (Y/N): n

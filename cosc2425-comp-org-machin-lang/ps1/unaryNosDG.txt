@@ -1,0 +1,43 @@
++dean@t14:~/.2425/ps1$ ./unaryNosDG 
+
+Enter a positive number: 37
+
+37 in Unary is: 1111111111111111111111111111111111110
+
+Run Again (Y/N): y
+
+Enter a positive number: 1
+
+1 in Unary is: 0
+
+Run Again (Y/N): y
+
+Enter a positive number: 2
+
+2 in Unary is: 10
+
+Run Again (Y/N): y
+
+Enter a positive number: 3
+
+3 in Unary is: 110
+
+Run Again (Y/N): y
+
+Enter a positive number: 4
+
+4 in Unary is: 1110
+
+Run Again (Y/N): y
+
+Enter a positive number: 30
+
+30 in Unary is: 111111111111111111111111111110
+
+Run Again (Y/N): y
+
+Enter a positive number: 68
+
+68 in Unary is: 11111111111111111111111111111111111111111111111111111111111111111110
+
+Run Again (Y/N): n

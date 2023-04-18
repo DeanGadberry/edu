@@ -1,0 +1,33 @@
++dean@t14:~/.2425/ps1$ ./baseRounderDG 
+
+Enter a value: 24.5555555
+Enter the base of the value: 6
+Number of decimal places to round: 5
+
+The result in base 6: 25.00000
+
+Run Again (Y/N): y
+
+Enter a value: CC.CCC
+Enter the base of the value: 13
+Number of decimal places to round: 2
+
+The result in base 13: D00.00
+
+Run Again (Y/N): y
+
+Enter a value: E01.DB9F
+Enter the base of the value: 16
+Number of decimal places to round: 2
+
+The result in base 16: E01.DC
+
+Run Again (Y/N): y
+
+Enter a value: 09.25D24
+Enter the base of the value: 14
+Number of decimal places to round: 2
+
+The result in base 14: 09.26
+
+Run Again (Y/N): n

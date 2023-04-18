@@ -1,0 +1,22 @@
++dean@t14:~/doc/edu/cosc2436-prog-fund-III/ps1$ ./checkMagicDG 
+Enter the 3 by 3 magic square: 3 1 9 2 3 5 8 1 9
+Magic Square:
+3 1 9
+2 3 5
+8 1 9
+Missing:  R1 R2 R3 C1 C2 C3 D2 
+Run Again (Y/N): y
+Enter the 3 by 3 magic square: 4 9 2 3 5 7 8 1 6
+Magic Square:
+4 9 2
+3 5 7
+8 1 6
+Missing:  
+Run Again (Y/N): y
+Enter the 3 by 3 magic square: 4 3 2 9 8 7 6 5 1
+Magic Square:
+4 3 2
+9 8 7
+6 5 1
+Missing:  R1 R2 R3 C1 C2 C3 D1 D2 
+Run Again (Y/N): n

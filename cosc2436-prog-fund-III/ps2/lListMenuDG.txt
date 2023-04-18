@@ -1,0 +1,113 @@
++dean@t14:~/.2436/ps2$ ./lListMenuDG 
+
+Continue to Menu? (y/n): y
+
+Menu:
+
++------------+------------+
+| 1. Insert  | 6. Sort    |
+| 2. Delete  | 7. Reverse |
+| 3. Search  | 8. Rotate  |
+| 4. Print   | 9. Shift   |
+| 5. Size    | 0. Clear   |
++------------+------------+
+|            | Q. Quit    |
++-------------------------+
+
+Make a selection: 1
+
+Enter an integer: 7
+
++-----------------+
+| 1. Insert First |
+| 2. Insert Last  |
++-----------------+
+
+Make a selection to insert value (7): 2
+
+Continue to Menu? (y/n): y
+
+Menu:
+
++------------+------------+
+| 1. Insert  | 6. Sort    |
+| 2. Delete  | 7. Reverse |
+| 3. Search  | 8. Rotate  |
+| 4. Print   | 9. Shift   |
+| 5. Size    | 0. Clear   |
++------------+------------+
+|            | Q. Quit    |
++-------------------------+
+
+Make a selection: 4
+
++-----+--+
+|     |\ |
+|  7  | \|
++-----+--+
+
+Continue to Menu? (y/n): y
+
+Menu:
+
++------------+------------+
+| 1. Insert  | 6. Sort    |
+| 2. Delete  | 7. Reverse |
+| 3. Search  | 8. Rotate  |
+| 4. Print   | 9. Shift   |
+| 5. Size    | 0. Clear   |
++------------+------------+
+|            | Q. Quit    |
++-------------------------+
+
+Make a selection: 1
+
+Enter an integer: 2
+
++-----------------+
+| 1. Insert First |
+| 2. Insert Last  |
++-----------------+
+
+Make a selection to insert value (2): 2
+
+Continue to Menu? (y/n): y
+
+Menu:
+
++------------+------------+
+| 1. Insert  | 6. Sort    |
+| 2. Delete  | 7. Reverse |
+| 3. Search  | 8. Rotate  |
+| 4. Print   | 9. Shift   |
+| 5. Size    | 0. Clear   |
++------------+------------+
+|            | Q. Quit    |
++-------------------------+
+
+Make a selection: 4
+
++-----+--+      +-----+--+
+|     |  | ---> |     |\ |
+|  7  |  |      |  2  | \|
++-----+--+      +-----+--+
+
+Continue to Menu? (y/n): n
+
+Sorry, you can literally only continue to the menu.
+
+Continue to Menu? (y/n): y
+
+Menu:
+
++------------+------------+
+| 1. Insert  | 6. Sort    |
+| 2. Delete  | 7. Reverse |
+| 3. Search  | 8. Rotate  |
+| 4. Print   | 9. Shift   |
+| 5. Size    | 0. Clear   |
++------------+------------+
+|            | Q. Quit    |
++-------------------------+
+
+Make a selection: q

@@ -1,0 +1,39 @@
++dean@t14:~/.2436/ps2$ ./showPostEvalDG 
+
+Enter a postfix expression: 8 3 9 - * 2 + 3 2 / *
+
+
+Stack Contents:
+
+After push operation: 8
+After push operation: 8 3
+After push operation: 8 3 9
+After - operation: 8 -6
+After * operation: -48
+After push operation: -48 2
+After + operation: -46
+After push operation: -46 3
+After push operation: -46 3 2
+After / operation: -46 1
+After * operation: -46
+
+Final Value: -46
+
+Run Again (Y/N): y
+
+Enter a postfix expression: 4 9 2 - + 5 *
+
+
+Stack Contents:
+
+After push operation: 4
+After push operation: 4 9
+After push operation: 4 9 2
+After - operation: 4 7
+After + operation: 11
+After push operation: 11 5
+After * operation: 55
+
+Final Value: 55
+
+Run Again (Y/N): n

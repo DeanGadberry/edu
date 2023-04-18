@@ -1,0 +1,43 @@
++dean@t14:~/doc/edu/cosc2436-prog-fund-III/ps1$ ./minRectangleDG 
+
+Enter the number of rows (2-10): 3
+Enter the number of cols (2-10): 3
+
+ Generated grid: 
+
+ 0 0 0
+ 0 0 0
+ 1 0 1
+
+The least number of rectangles/squares formed is 2
+
+Run Again (Y/N): y
+
+Enter the number of rows (2-10): 5
+Enter the number of cols (2-10): 5
+
+ Generated grid: 
+
+ 0 0 0 0 0
+ 0 1 0 1 0
+ 1 0 1 0 0
+ 0 1 1 1 0
+ 0 1 0 0 1
+
+The least number of rectangles/squares formed is 7
+
+Run Again (Y/N): y
+
+Enter the number of rows (2-10): 4
+Enter the number of cols (2-10): 4
+
+ Generated grid: 
+
+ 0 1 0 1
+ 1 0 1 0
+ 1 1 0 0
+ 1 0 1 1
+
+The least number of rectangles/squares formed is 6
+
+Run Again (Y/N): n
