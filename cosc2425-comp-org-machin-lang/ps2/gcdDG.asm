@@ -13,7 +13,6 @@
 	; https://stackoverflow.com/questions/50204908/masm-how-to-make-desired-function-call
 	; https://learn.microsoft.com/en-us/cpp/assembler/masm/operator-gt?view=msvc-170
 	; https://stackoverflow.com/questions/9246002/call-atoi-assembler-printf-assembler
-	; 
 
 .386
 .model flat, stdcall, c
@@ -22,8 +21,6 @@
 .data
 firstNumber dword 0
 secondNumber dword 0
-compare1 dword 0
-compare2 dword 0
 gcdFinal dword 0
 
 firstNumberPrompt BYTE "Please enter your first integer: ", 0
@@ -40,8 +37,6 @@ extrn printf:near
 extrn exit:near
 extrn gets:near
 extrn atoi:near
-
-
 
 gcd proc uses esi ecx
 	.if esi <= 0
@@ -80,7 +75,7 @@ main proc
 	push offset secondNumber
 	call atoi
 	mov secondNumber, eax
-	
+
 	mov esi, firstNumber
 	mov ecx, secondNumber
 	call gcd
