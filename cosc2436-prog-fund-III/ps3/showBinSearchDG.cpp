@@ -26,7 +26,6 @@ int main()
    std::cin
       >>last;
    std::cout
-      <<std::endl
       <<"Enter search target: ";
    std::cin
       >>value;
@@ -36,6 +35,8 @@ int main()
    { 
       valueArray[i] = i + 1; 
    }
+   std::cout
+      <<std::endl;
    int searchIndex = binarySearch(valueArray, FIRST, last - 1, value);
    std::string whetherObtained;
    if (valueArray[searchIndex] == value)
