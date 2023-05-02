@@ -1,0 +1,313 @@
++dean@t14:~/.2436/makeUpSet$ ./blobGeneratorDG 
+
+Enter row size [1,50]: 5
+Enter column size [1,50]: 5
+Percentage probability [0,100]: 40
+
+---X-
+XXXXX
+XX-XX
+----X
+XXX--
+
+There are 2 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 50
+Enter column size [1,50]: 50
+Percentage probability [0,100]: 20
+
+X----X------XX--X-------X----------------X-X------
+-----------XXX-X-X------------------X-X-----X-----
+----------X------XX-----X--X--X-XXX-X---X-X--X--X-
+-------------X---X------------X----X--X--X--X--X-X
+-----XX---X-X------------------X------X-X----X---X
+------------------X----------X----------X------X--
+-X-------------X----XX---X-----------X------------
+------X-X----X-X-X---X----X-X----X----------------
+--X----X------------X----------------------X--X---
+X----X-----X--------------X-----X-----X-------X--X
+-X-X---------XX--XXX-----XX------X---X---XX--XX---
+---X----X-XX-X----XX----X---X--------X------XX----
+-X----XXX---X--X-----X--XX------X------X--X---XX--
+-X---------X---------X-X-----X-------X---------X--
+------------X-----XX---------------XX-----------X-
+--X------X-X---X------------------XX----XX------X-
+-------XXX--X-X------X--XX------------X-X-X-X-X---
+---X-X----X----X-XX-----X--X----X-X---XXX---X-X---
+----X----X------X-X--XXX----X---X--------X-----X-X
+-----X--X---X---------X-----X---------XX----------
+X---X----X-X---X------X---X--X-XX---X-X-----XX-X--
+-------X-X--X-XX-X-----X--X----X-XX-X-------X-----
+---------XX------X--------------X--------X-XX-----
+--XXX--------X---X--X------X-----X--XX------------
+----------X-----X-------X------------------------X
+------------X----X------X----X--XX-XXX----X-----X-
+---X--X-----X--XXXX--XX----X-X--------------------
+X------------X--XXX--------------X----X-X----XX---
+---X--------X----X------XX------X---X--X-----X--X-
+-XX----XX----X---------X-X------------------------
+X----------------X----------X--------XX----X------
+-X-X-X-----------------------X-X---------X--------
+X---X------X----------------------X---X--XX--X----
+---X-X--------X-X--------------X-X----X-----------
+-X----XX----X----X----------XXX-------------X-----
+X-XX------------XX---X--XX-----X----X---X------X--
+----X-----XX-------X--------X-----X-X-X-X-X----X--
+X--X-----X-------------------------X-X--------X---
+XX-X--XXX-XX----X--------XX-------------X-X-------
+-----X---X-X---X------X-X-X-X-------XX-XX------X-X
+----X-X-XX--X------XX----X-XX----X-----X-------X-X
+---X--X--X------------X---X-X--------------X------
+-------------------X---X-----------X--X-X---------
+----------X----X----X-X----X-------X---X-XX--X--X-
+-X---X-------X-----------XX--X------X-----X-XX----
+XX--X-XX---X--X-----XX----X-X---X-XXXX-XX-------X-
+X-----X-X--XX--XX---XX---XX--X------X------X----X-
+--XX--X--XXX--X---X-XX--XXX----------X--X-XX------
+XX------X-X-----X----XX---X-XX--X-XX-----XX---X--X
+-X---X------XX-----X-----------X-------------X--X-
+
+There are 174 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 30
+Enter column size [1,50]: 30
+Percentage probability [0,100]: 20
+
+---------X--X----------X--XX--
+-------------XX------------X--
+----------X--------X---X--XX--
+XXXX----X-----X----X----X---X-
+XX--XXX--------XX-X------X----
+-X-------X--X---------X-------
+X-------X--------X-XX---X-----
+-X---X--X--------X-X-X-X------
+---X--------X--XXXXX-------X--
+-X------------X-------------XX
+---XXX----------X-X---------X-
+---X-------X-X-----X-X--------
+------X-----X------X-X--------
+--X---X------XX--------X----X-
+X------X------------------X---
+-------X---------------------X
+----XXX--X----X-X-X-XXX--X----
+----------X-XX-X---X-----X-X-X
+------X---X-----X------XX-----
+-----------X----X-----XX-X----
+-X---------X----XX-X--X--X----
+---X-----X--------X-----X--XXX
+------X-X----X--------X----X-X
+----X---X--------X-----X---X--
+--X-X------------XX--X-X------
+X------XX--X----X--X-X---XX---
+X-X--X------X--------X-----X--
+--X--X------X---X---------X---
+XXX-----XXX-X--XX-------------
+--X-------X--X----X--------XX-
+
+There are 60 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 30
+Enter column size [1,50]: 50
+Percentage probability [0,100]: 30
+
+--XX--XX----------X--------------XX--XX---XX-XXX--
+X----X----XX--X------X-X-------XX----XX---X--X-X-X
+-----XXX-X--X-X-X--X-------X-----XX-------X-X--X--
+--X--X-X--X----XX--------X------X-------------X---
+--X---X-XX-X----XX--X-X-X--X--XX-----XX-------X--X
+----X--X--X--X---XXX-XX------X------X-X--X--X-----
+--XXX---X---------X-X--X---X----X-X-X---------XX--
+X------XX-X-----X--XXXX------------X---X-X--------
+-XX-X----XXXX-----------------------X-X----X------
+--XX--X--XX-X-X-----X---X-X------------XXX-XX-X-XX
+--XXX----X--XXX-XX------XX--X--------X--XX--------
+-X-X------X-X---------X-XXXXX-----X-X------XX----X
+---X------X--X--X-X--X-X-X--X---X-X------X---X----
+XXX------X---X-XX--XX-XX-XXX-XX---X-----X----X-X--
+----XX--X--X-----X-X------X-X------X--X--------XX-
+X---XX------------X-X----X-X-XX-----X--XXXX-------
+-X-X-X-X--X---X-----X-X-X------XX--X--X--X----X---
+-----X------X-------XXX-----XX--X----------X--X-X-
+-X-XX-XX--XX---X-X-----X------X-XXXX--XX-X---X-XX-
+----X----------X----XXX-----X--------X-X--X----X-X
+----X------XX--XX--XX--X------X---------X---X-XX--
+-----X--XX-X--XXXX-X---X-X-----------------X-X-X--
+-----XX-----X----X---X---X--X---X-XXX-XX-X---X----
+---X-X-XXX-----------X-X---XX-X-XX----------------
+------X-X-X--X---XX-X-X--XXXXX---------------X-XX-
+----XX---X--XXX-X-X----XXX--X-X-X-XX-XX----XX-----
+---X---X-------XXX-X-----XX-----X---X---X-X---X---
+----------XXX----X------XX-------X-XXX-----X------
+---X-X-X-----XXX-XX-X------X---X--------XXX--X----
+-XX------------X-----X----XX-X--X-X------X-XX-XX--
+
+There are 87 blobs.
+
+Run Again (Y/N): 10
++dean@t14:~/.2436/makeUpSet$ 40
+40: command not found
+:dean@t14:~/.2436/makeUpSet$ ./blobGeneratorDG 
+
+Enter row size [1,50]: 10
+Enter column size [1,50]: 40
+Percentage probability [0,100]: 10
+
+-----XXX--X-----------X-----XX-XX-------
+-X------X--X--XX---X-------------X-X----
+-X----------X-------X---------X-X-------
+----X------X----X-------X-----XX--------
+------------X----------X-------X-----X--
+--X------X--------------X------X-------X
+--X-----X--------X-------X---------X--X-
+----X-X----X-------------------------X--
+----------X-XXX-X-------------X---------
+------X--X----X-X-----X-X-------X------X
+
+There are 28 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 10
+Enter column size [1,50]: 40
+Percentage probability [0,100]: 80
+
+XXXXXX--XXXXXXXXXXXXX--XXXXXXX-XXX--XXXX
+X-XX-XXXXX--X---XXXX-XX-XXXXXXXX-X--XXXX
+-XXXXXX-X-XXX-XX-X--XXXXXX-XXXXX-XXXXXXX
+XXXXXXXX-X-XXXXXXXXXXXX-XXXXXXX-X-X-XXXX
+XX-XXXXXXXXXXXXXXXXXXXXX---XXXX--XXXXXXX
+XXXXXXXXXXX--XXXXXXXXXXXXX-XXXXXXXXXXXXX
+XXX-XXXXXXX-XXXXXXXXXXXXXXXXXX-XXX-XXXXX
+XXX-XXXXX--X-XXXXXX-XX-XXX-XXXX-XXXXXXXX
+XXXXX-X---XXXX--X-XX-XX-XX-XXXX-XXXXXXXX
+XX-XXXX-XXXX-X-XX-X-XXXXXX-XX-XX--XXXXXX
+
+There is 1 blob.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 5
+Enter column size [1,50]: 5
+Percentage probability [0,100]: 50
+
+--X--
+X---X
+XX-X-
+-X-X-
+X-XX-
+
+There are 2 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 6
+Enter column size [1,50]: 7
+Percentage probability [0,100]: 30
+
+---XX--
+-XXX---
+--X----
+X--X-X-
+X--X---
+-X-X-X-
+
+There are 4 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 40
+Enter column size [1,50]: 50
+Percentage probability [0,100]: 60
+
+X-----X-XXXXX-X-----XXXXXXX-XXXXXX-----XXXXXXXX-XX
+---X-XXX-X-X---X----X-XX--XXXXXXXX-XXXX---X-XXX--X
+XX-XXX-X--XXXXXX-X-----X--XXX-XXX-XXX-XXXX---XX-X-
+XXX-X-XXXXXXX-XX-XXXXXX-----XXXX-X-X-XXX-X-XXXX-XX
+XX---XXXXXXXX-X---XXXXX---X-XX-XXXX-XXX-X--X----XX
+X--XXXXX-X-X-X---X-X---X-----XXXX--X--XX-XX-XXX-X-
+X-X----X-X-XXXX-X---X-X-XXX-XXXXX--XXX--X--XXX--XX
+X----X-XXX-XXXXXXX-X--XXXXXX-XXX--X-X-X---XXXXXX-X
+XXX-XX-XXXX-XXXXXXX-XX--XX--XXXX-XXXXXX-X-X---XXXX
+-X--XX-XXXXX-----XX-XXXXX-X-XXXX-XX--XXX-X-XXX---X
+XX----XX---XXX--XXXX----X--X-X---XXX-XXXX--X-XX-XX
+X-X-XXXXXX--XX--X-XX--XXXXX-XX-X--X-XX-X-X--X-XXXX
+X----XX-XXX-XXX-XX--XX---X-X--XXXX-XXX-XXX--X-X-XX
+-XXXX-XX-X-XX-X-X-----X----XXX-XX--X--XX--XX----XX
+X---XXXXXX-XXX---XX-X---X---XX-X-XX-XXXXX--X-XX--X
+---XX-XXXX--X--X---X-XXXX-XX--XXXXXX--XX-X--XXX-XX
+X-XX-XXXX--X--X-X-XXX-X-XXX--XX---X-XX-XXXX-X-XXXX
+-XX-XX-XX-X----X-X-XX-XXXX-XXXX-XX--XX-X-X-XXXX-X-
+X-XXXXX-XX--X----X--XX-X--X--X-XX---XX--X-X-XX-X--
+XX-XXXXX-XXXX----XX--XXXXX-X--XX---XXXXX----X--XX-
+X-X-XXX-X-XXX---XXX---X--XXX-X-XXXXXXX-XX--XXXXX-X
+X--XXX-XXXX--XX-XXX-XXX-XXXXXXX---X---X-XX--X--XXX
+--X-XX---X---XX-XX--XXXXX-XX--XXX-XXXX--XXXXXXX-XX
+XX-X-XXX-XX---X---XXX-X-X-XXX-XXX-XXXX-X-XXXX-X-XX
+--X-XXX--XX-XX---XX-XXXXXXXX-XXXX-XXX-X--X-XXX-XX-
+XXX-XXX-X-X----XX-X-XXXXX-X-XX--XXXXXX-XXXXXXXX-XX
+-X--X-XXXX--XXXXXXXX-X-X-X--XXX--XXX-X----XXX-XX--
+--X-XX-X-X-XXXX-X-X-XXX--XXXXX-XX-X--XXX-X-X-XX-XX
+XXXX--XXXXXXX-XX--XXXX-X-XXX--XXXXXX--XXX--X-X-XXX
+X--XXXXX---XXX--XX-XXXXX-X--XXX--XXX---XX----X-XX-
+-XXXXX-X-XXXX---X-X--XX--X-XXXX---XXXX-X--XX-XX-X-
+X-XXXX--X----XX-X---XXXXX--XX-XXXXXX--XXX---XX---X
+XXXX-X----XX-X-XXXXXX-X-XXXX-XX--XX-XX--X-XXX--X-X
+X-X--XX-X--X-XX-X-X-X-XXXXX--XXXXXXX-X--XX--XX-X-X
+--------X-XX-XX-X--XX----XX-XX-XXXXXXX-XXXX-XX-XXX
+XXXXXX---XX---X-----XX-XXXXX-X--XXX-XXXX-X-X--X-XX
+-XXXXX-XXXXXX-----XX--XXX-X-X-X-XXXXX--X-X--XX-XXX
+------XXXXX---XX-XXXXX-X---XXXX-X--XXXX--X-X-XXXXX
+XXX-X-XX-XXX----XX-XX-X--X---X-XXXXXXXXXXXXXX--X--
+XX-XXX---XXX-XXX-XXXXX--XXX-X-XXXXX-XXXXXX-XXX---X
+
+There are 6 blobs.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 20
+Enter column size [1,50]: 30
+Percentage probability [0,100]: 90
+
+XXXX-XXXXXXXXXXX-XXXXXXXXXXXXX
+XXXX-XXXXXXXXXXXXXXX-XXXXXXXXX
+XXXXXX-XXXXXXXXX-XXXXXXXXXXXXX
+-XXXX-XXXXXXXXXXXXX-XXXXX-XXXX
+X-XX-XXXXXXXX-XX--XXXXXX-XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX-
+XXXXXXX-XXXXXXXXXXXXXXXXXXXXXX
+XXXXX-XXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXX-XXXXXXXXXXXXXXX
+--XXX--XXXXXXXXXXX-XXXXXXXXXXX
+XXXXXXXXXXXXX-XX-XXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX-XXXXXXXXX
+XX-XX-XXXXXX-X-XXXXX-XXX-XXXXX
+XXXXXXXXXXXX-XXX-XXXXXXXXXXXX-
+-XXX-XXXXXXXXXXXXXX-XXX-XXXXXX
+XXXX-XXXXXXXXXX-X-XXXX-XXXXXXX
+-XXXXXXXX--XXXXXXXXXXXXXXXX-XX
+XXXXXXXXXXXXXXXXXXXXXXXX-XXXXX
+XXXXXXXXXXXX-XXXXXXXXXXXXXXX-X
+XXXXXXXXXXXXX-X-X-X-X-XXXXXXXX
+
+There is 1 blob.
+
+Run Again (Y/N): y
+
+Enter row size [1,50]: 4
+Enter column size [1,50]: 50 
+Percentage probability [0,100]: 20
+
+----X------------XX---------X---X--X--------------
+-X---X--X------------------X---X------------------
+-X------------X----------X--X----XX------X--------
+-X-----------------XX------XX-------X--XX---------
+
+There are 13 blobs.
+
+Run Again (Y/N): n

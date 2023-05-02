@@ -1,0 +1,18 @@
++dean@t14:~/.2436/makeUpSet$ ./royalOrderDG 
+Enter file name: royals.txt
+
+Succession Order:
+
+Amarantha
+Bethesda
+Callipygia
+Depilitoria
+Edna
+Flegma
+Ganache
+Hildegarde
+Indicia
+Jaundice
+Kalahari
+Ludmilla
+Miasma

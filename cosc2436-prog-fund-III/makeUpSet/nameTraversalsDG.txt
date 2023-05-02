@@ -1,0 +1,49 @@
++dean@t14:~/.2436/makeUpSet$ ./nameTraversalsDG 
+
+Enter a last name: GADBERRY
+
+Traversals:
+
+In Order:           A B D E G R R Y 
+Pre Order:          G A D B E R R Y 
+Post Order:         B E D A R Y R G 
+Level Order:        G A R D R Y B E 
+Reverse Order:      Y R R G E D B A 
+
+Run Again (Y/N): y
+
+Enter a last name: JAMES
+
+Traversals:
+
+In Order:           A E J M S 
+Pre Order:          J A E M S 
+Post Order:         E A S M J 
+Level Order:        J A M E S 
+Reverse Order:      S M J E A 
+
+Run Again (Y/N): y
+
+Enter a last name: EKATERINA
+
+Traversals:
+
+In Order:           A A E E I K N R T 
+Pre Order:          E A A E K I T R N 
+Post Order:         A E A I N R T K E 
+Level Order:        E A K A E I T R N 
+Reverse Order:      T R N K I E E A A 
+
+Run Again (Y/N): y
+
+Enter a last name: CHEGWIDDEN
+
+Traversals:
+
+In Order:           C D D E E G H I N W 
+Pre Order:          C H E D D E G W I N 
+Post Order:         D E D G E N I W H C 
+Level Order:        C H E W D G I D E N 
+Reverse Order:      W N I H G E E D D C 
+
+Run Again (Y/N): n
