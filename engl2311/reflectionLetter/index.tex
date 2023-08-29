@@ -1,0 +1,82 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushleft}
+
+Dean Gadberry\\
+1947 Colorado Blvd APT C\\
+Denton, TX 76205\\
+469-420-0771
+
+\par
+\hfill\break
+Hello Professor Smart,
+
+Thank you for such a wonderful semester! These last few months have been especially wonderful because of the time that I've been able to spend in your class. 
+
+I learned a lot about people, during this course. The opportunity to listen and speak with my peers and professors was an invaluable experience. I learned that many, today, are acting immaturely because of their lack of understanding. They are intimidated by others, because they do not know that people are people. 
+
+People \emph{are} people. What does that mean? People have dreams and goals and hopes. They have fears and anxieties and disgust. When the multifaceted nature of all people is recognised, people become clear. They are not a threat to me or my pursuits. They are so caught up within their own unique perspective on the world, that they can not even think about me in any way other than as an object in their way or a vehicle to get them to where they want to be.
+
+Thank you for helping me understand so many things about people, during this semester. I also learned course-related things. I am grateful for those lessons, too.
+
+%What goals did you identify in our Introduction Discussion at the beginning of the term? Have you achieved those goals?
+During this course, I had set a personal goal to learn to write with \LaTeX{}. I have successfully submitted all of my personal assignments in this class and my humanities class in the form of \LaTeX{} compiled PDFs. I am currently writing this reflection letter in my \LaTeX{} editor.
+
+%What did you learn about the importance of audience, and how might those lessons help you in future classes or your career?
+
+%How did you use the writing process (draft, edit, rewrite, and revise) to improve the assignments you completed for this course? How do you plan to use the writing process in the future?
+
+%What did you learn about document design (layout, formatting, graphics) during this course? How might these skills benefit you after college?
+
+
+%Did you collaborate successfully team during the proposal project? What did you learn about teamwork in the academic and professional worlds?  What digital or distance collaboration skills did you develop this term that might be useful moving forward?
+During my team project, while I did not have the opportunity to write anything with \LaTeX{}, my team did use a google document which we all had access to. We learned positive communication skills which we employed when collaborating together. We used a group chat to talk about our expectations, goals, plans, execution strategies, requests for help, and updates on when edits were done.
+
+I was the editor for those group chats. I would usually work with Yasmin to create a plan to tackle the project, and then I would write my section. Everyone else would write their section, and I would make final edits. 
+
+This is when I used the writing process (draft, edit, rewrite, and revise), during this course. I have not usually used this process, when writing. I generally appreciate the first thing that I write, and find that it is above the standard of my competition and gives me a competitive edge. I would like to be challenged by a teacher, some day, to pursue an even greater level of writing.
+
+%What other skills have you developed during this course that you expect will benefit you in your profession? Consider reviewing our marketable skills page for ideas.
+I have developed some skills which I did not expect, during this course. I learned to manage a team in a kind and efficient manner. I learned to communicate expectations and standards to my group members, even when that was a difficult task.
+
+%What suggestions do you have for me as I prepare this course for the next term? I’m always revising, editing, and rewriting, and I value your feedback!
+The best improvement to my writing came from a high school english course that I took years ago. In that class, every day, we would write for 15 minutes at the beginning of class. The prompts would rotate and were very diverse. At the end, we would share and discuss our writing, and then move on with the course. I suggest that you incorporate this into your courses. This teaches students how to write under pressure and practice public speaking.
+
+Again, Thank you for the amazing experience that you have offered us through this class. I pray that you stay well as you continue your teaching career. 
+
+\hfill\break
+\hfill\break
+Every Blessing
+
+Dean Gadberry \\
+\href{https://www.deangadberry.com}{\texttt{DeanGadberry.com}}\\
+\href{mailto:contact@deangadberry.com}{\texttt{contact@DeanGadberry.com}}\\
+
+\end{flushleft}
+\end{document}
