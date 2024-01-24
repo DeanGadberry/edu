@@ -1,0 +1,64 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushleft}
+Kinematic Equations for Constant Acceleration
+\[ v=v_{0}+at
+\]
+\[ x=x_{0}+v_{0}t + \frac{1}{2}at^2
+\]
+\[ v^2=v_{0}^2+2a(x-x_{0})
+\]
+\[\overline{v}=\frac{v+v_{0}}{2}
+\]
+These are presented by the professor as
+\[ v_{f}=v_{0}+at
+\]
+\[ \Delta x=v_{0}t+\frac{1}{2}at^2
+\]
+\[v_{f}^2=v_{0}^2+2a\Delta x
+\]
+Acceleration of gravity at surface of Earth
+\[ g=9.8\frac{m}{s^2}
+\]
+\[ g=32\frac{ft}{s^2}
+\]
+when something is acting under the influence of gravity, the acceleration is increasing in a negative direction. Thus,
+\[ a = 9.8\frac{m}{s^2}
+
+\]
+"How far has an object dropped?" is asking for displacement $ \to \Delta x$ 
+
+"How high does it go up?" Solve for $\Delta x$ where $ v=0\frac{m}{s}$ 
+
+"How long is it in the air?" solve for t with the 
+\end{flushleft}
+\end{document}

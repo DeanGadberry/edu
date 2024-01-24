@@ -1,0 +1,59 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushleft}
+\[ \vv{v} \]
+\[
+    \int_{-1}^1
+    [x+4 ]dx
+\]
+\[ \frac{x^2}{2}+4x\Biggr\rvert_{-1}^1 \]
+\[ \Delta x \]
+\[\vv{V}=\vv{V_{1}}+\vv{V_{2}}\]
+\[
+    \vv{v} = \lim_{\Delta t \to 0} \frac{\Delta \vv{r}}{\Delta t}
+    =\frac{d\vv{r}}{dt}
+\]
+\[
+  \overline{v}
+  \bar{v}
+\]
+Kinematic Equations for Constant Acceleration
+\[ v=v_{o}+at
+\]
+\[ x=x_{o}+v_{o}t + \frac{1}{2}at^2
+\]
+\[ v^2=v_{o}^2+2a(x-x_{o})
+\]
+\[\overline{v}=\frac{v+v_{o}}{2}
+\]
+\end{flushleft}
+\end{document}
