@@ -1,0 +1,185 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushleft}
+    Dean Gadberry
+
+    NCTC PHYS 2425
+
+    \today
+
+    \section*{QUESTIONS}
+      \hrule
+      \subsection{1. Does a car speedometer measure speed, velocity, or both? Explain.}
+        A car speedometer measures speed. It cannot measure velocity, as velocity is a vector and thus the speedometer would need to denot directionto also measure velocity.
+      \subsection{5. Compare the acceleration of a motorcycle that accelerates from 80 km/h to 90km/h with the acceleration of a bicycle that accelerates from rest to 10km/h in the same time.}
+        The acceleration of the both examples is the same because they both increased 10km/h in the same amount of time.
+      \subsection{12. As a freely falling object speeds up, what is happening to its acceleration-does it increase, decrease, or stay the same?}
+        \subsubsection{(a) Ignore air resistance}
+        As a freely falling object speeds up, in a vacuum, it's acceleration remains the same (-9.8m/s).
+        \subsubsection{(b) Consider air resistence}
+        As a freely falling object speeds up, encountering air resistance, its acceleration remains the same until it reaches terminal velocity, at which point it decreases.
+      \subsection{14. Can an object have zero velocity and nonzero acceleration at the same time? Give examples.}
+      Yes, an object can have zero velocity and nonzero acceleration at the same time. When I put my foot on the gas pedal, velocity starts at 0.
+      \subsection{15. Can an object have zero acceleration and nonzero velocity at the same time? Give examples.}
+      Yes, an object can have zero acceleraion and nonzero velocity at the same time. When I am running to class at maximum speed, my velocity is constant, but my acceleration is 0.
+    \section*{MISCONCEPTION QUESTIONS}
+      \hrule
+      \subsection{1. In which of the following cases does a car have a negative velocity and a positive acceleration? A car that is traveling in the}
+      (b) -x direction increasing in speed
+      \subsection{7. At time $t = 0$ an object is traveling to the right along the +x axis at a speed of $10.0m/s$ with constant acceleration of $-2.0m/s^2$. Which statement is true?}
+      (a) The object will slow down, eventually coming to a complete stop.
+    \section{PROBLEMS}
+      \hrule
+      \subsection{5. (II) You are driving home from school steadily at $95 km/h$ for $210 km$. It then begins to rain and you slow to $65 km/h$. You arrive home after driving $4.5 h$.}
+        \subsubsection{(a) How far is your hometown from school?}
+        \[
+          \frac{95km}{h} = \frac{210km}{t} \implies 
+          %\biggr(\frac{t}{95km}\biggr)\biggr(\frac{95km}{h}\biggr)
+          %=\biggr(\frac{210km}{t}\biggr)\biggr(\frac{t}{95km}\biggr)\implies
+          t=\frac{42}{19}h \approx 2.21h
+        \]
+        \[
+          4.5h=\frac{85.5}{19}h \implies 
+          \frac{85.5h}{19}-\frac{42h}{19} =\frac{43.5h}{19}\approx2.29h
+        \]
+        \[ 
+          \frac{65km}{h} \times \frac{43.5h}{19} \approx 148.8km
+        \]
+          \[
+            \Delta x\approx210km+148.8km\approx358km
+          \]
+        \subsubsection{(b) What was your average speed?}
+        \[ 
+          \overline{v}=\frac{\Delta x}{\Delta t}=\frac{358km}{4.5h}=79.7km/h
+        \]
+      \subsection{16. (II) The position of an object along a straight tunnel as a function of time is plotted in Fig. 2-40. What is its instantaneous velocity (a) at $t=10.0s$ and (b) at $t=30.0s$? What is its averave velocity (c) between $t=0$ and $t=5.0s$, (d) between $t=25.0s$ and $t=30.0s$, and (e) between $t=40.0s$ and $t=50.0s$}
+      (a)
+      \[
+v=\frac{x}{t}=\frac{2.5}{10}=0.25m/s
+      \]
+      (b)
+      \[
+v=\frac{x}{t}=\frac{16}{30}=1.3m/s
+      \]
+      (c)
+      \[
+        \overline{v}=\frac{\Delta x}{\Delta t}=\frac{12}{5}=0.4m/s
+      \]
+      (d)
+      \[
+        \overline{v}=\frac{\Delta x}{\Delta t}=\frac{16-8}{30-25}=1.56m/s
+      \]
+      (e)
+      \[
+        \overline{v}=\frac{\Delta x}{\Delta t}=\frac{10-19}{50-40}=-1m/s
+      \]
+      \subsection{26. (II) A particle moves along the x axis. Its position as a function of time is given by $x=4.8t+7.3t^2$, where t is in seconds and x is in meters. What is the acceleration as a function of time?}
+      \[
+        a=\frac{dv}{dt}=\frac{d}{dt}[4.8t+7.3t^2]=14.6m/s^2
+      \]
+      \subsection{35. (I) A car accelerates from 13 m/s to 22 m/s in 6.5s. What was its acceleration? How far did it travel in this time? Assume constant acceleration.}
+      \[
+        \overline{a}=\frac{\Delta v}{\Delta t}=\frac{22 -13}{6.5}\approx 1.38m/s^2
+      \]
+      \subsection{36. (II) A world-class sprinter can reach a top speed (of about $11.5m/s$) in the first $18.0m$ of a race. What is the average acceleration of this sprinter and how long does it take her to reach that speed?}
+      \[
+        v_{f}^2=v_{0}^2+2a\Delta x \implies 11.5^2=0+2a(18) \implies
+        11.5=6\sqrt{a}\implies 
+        a=\biggr(\frac{11.5}{6}\biggr)^2 \approx 3.67
+      \]
+      \[
+        v_{f}=v_{0}+at\implies 18=0+3.67t\implies 
+        t=\frac{18}{3.67}\approx 4.90
+      \]
+      \subsection{38. (II) In coming to a stop, an old truck leaves skid marks $45m$ long on the highway. Assuming a deceleration of $6.00m/s^2$, estimate the speed of the truck just before braking.}
+      \[
+        v_f^2=v_0^2+2a\Delta x
+      \]
+      \[
+        0=v_0^2+2(-6.00m/s^2)(45m) \implies
+        v_0^2=540 \implies v_0=\sqrt{540}\approx 23.2m/s
+        \]
+      \subsection{52. (I) A stone is dropped from the top of a cliff. It is seen to hit the ground below after 3.25s. How high is the cliff?}
+      \[
+        \Delta x=v_{0}t+\frac{1}{2}at^2 \implies 
+        \Delta x=(0)(3.25s)+\frac{1}{2}(-9.80m/s^2)(3.25s)^2 \implies 
+        \Delta x \approx 51.8m
+      \]
+      \subsection{56. (II) A baseball is hit almost straight up into the air with a speed of $22m/s$. Estimate (a) how high it goes, and (b) how long it is in the air. (c) What factors make this an estimate?}
+      (a)
+      \[
+        v_{f}^2=v_{0}^2+2a\Delta x \implies
+        0=22m/s+2(-9.80m/s^2)\Delta x \implies
+        \Delta x = \frac{-22}{-19.6} \approx 1.12m
+      \]
+      (b)
+      \[
+        \Delta x=v_{0}t+\frac{1}{2}at^2 \implies
+        1.12m=(22m/s)t+\frac{1}{2}(-9.80m/s^2)t^2 \implies
+        0=-4.9t^2+22t-1.12
+      \]
+      \[
+        t\approx 4.44s
+      \]
+      (c)\\
+      Some factors which make this an estimate are air resistance and the fact that altitude determines acceleration due to gravity.
+      \subsection{58. (II) The best \emphasis{rebounders} in \emphasis{basketball} have a vertical leap (that is, the vertical movement of a fixed point on their body) of about 120cm.}
+      (a) What is their initial "launch" speed off the ground?
+      \[
+        v_{f}^2=v_{0}^2+2a\Delta x\implies 
+        0=v_0^2+2(-9.80m/s^2)1.20m \implies
+        v_0^2=\sqrt{23.52}\approx 4.85m/s
+      \]
+      (b) How long are they in the air?
+      \[
+        \Delta x=v_{0}t+\frac{1}{2}at^2 \implies
+        1.20m=(48.5m/s)t+\frac{1}{2}(-9.80m/s^2)t^2 \implies
+        0=-4.9t^2+4.85t-1.20
+    \]
+    \[
+        t \approx 1s
+    \]
+      \subsection{63. (II) A stone is thrown vertically upward with a speed of 15.5m/s from the edge of a cliff 75.0m high.}
+      (a) How much later does it reach the bottom of the cliff?
+      \[
+        v_{f}^2=v_{0}^2+2a\Delta x\implies 
+        15.5m/s=0+2(-9.8m/s^2)\Delta x\implies 
+      \]
+      (b) What is its speed just before hitting?
+      \[
+      \]
+      (c) What total distance did it travel?
+      \[
+      \]
+\end{flushleft}
+\end{document}
