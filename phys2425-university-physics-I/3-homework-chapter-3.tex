@@ -1,0 +1,86 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushright}
+  Dean Gadberry
+
+  NCTC PHYS 2425
+
+  \today
+\end{flushright}
+\begin{center}
+  {\large Chapter 3 Homework}
+\end{center}
+\begin{flushleft}
+  \section*{QUESTIONS}
+  \hrule
+  \subsection{10. Does the odometer of a car measure a scalar or a vector quantity? What about the speedometer?}
+  The odometer of a car measures a scalar quantity. The speedometer also measures a scalar quantity.
+  \subsection{16. A projectile is launched at an upward angle of \degree{30} to the horizontal with a speed of 30m/s. How does the horizontal component of its velocity 1.0s after launch compare with its horizontal component of velocity 2.0s after launch, ignoring air resistance? Explain.}
+  The projectile will be farther away after 2 seconds than it is at 1 second. It's velocity in the horizontal direction will not change, though, because the force of gravity will only have an effect on the vertical velocity.
+  \subsection{17. A projectile has the least speed at what point in its path?}
+  A projectile has the least speed at the apex of it's climb and the termination of it's path.
+  \subsection{19. A person sitting in an enclosed train car, moving at a constant velocity, throws a ball straight up into the air in her reference frame.}
+  \subsubsection{(a) Where does the ball land?}
+  The ball lands where it started on the train.
+  \subsubsection{(b) Where does the ball land if the car accelerates?}
+  The ball lands in the negative x direction in relation to it's starting position in the train's reference frame.
+  \subsubsection{(c) Where does the ball land if the car deccelerates?}
+  In the train's reference frame, the ball will land +x from where it started.
+  \subsubsection{(d) Where does the ball land if the car rounds a curve?}
+  In this case, the ball will land offset by some value of z and likely an offset of x as well.
+  \subsubsection{(e) Where does the ball land if the car moves with constant velocity but is open to the air?}
+  Assuming air resistance, the ball will land behind it's starting position, that is the -x direction.
+  \section*{MISCONCEPTION QUESTIONS}
+  \hrule
+  \subsection{4. Which of the following equations correctly expresses the relation beween vectors $\vv{A}, \vv{B},$ and $\vv{C},$ shown in Fig 3-36?}
+  \subsection{6. A bullet fired horizontally from a rifle begins to fall}
+  \subsection{9. Two balls having different speeds roll off the edge of a horizontal table at the same time. Which hits the floor sooner?}
+  \subsection{10. You are riding in an enclosed train car moving at 90km/h. If you throw a baseball straight up, where will the baseball land?}
+  \subsection{11. Which of the three kicks in Fig. 3-38 is in th eair for the longest time? They all reach the same maximum height $h$. Ignore air resistance.}
+  \subsection{13. A hunter is aiming horizontally at a monkey who is sitting in a tree. the monkey is so terrified when it sees the gun that it falls off the tree. At that very instant, the hunter pulls the trigger. What will happen?}
+  \section*{PROBLEMS}
+  \hrule
+  \subsection{1. A car is driven 245 km west and then 118 km southwest (\degree{45}). What is the displacement of the car from the point of origin (magnitude and direction)? Draw a diagram.}
+  \subsection{2. }
+  \subsection{8. }
+  \subsection{9. }
+  \subsection{10. }
+  \subsection{32. }
+  \subsection{34. }
+  \subsection{36. }
+  \subsection{47. }
+
+\end{flushleft}
+\end{document}

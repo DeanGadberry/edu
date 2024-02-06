@@ -18,6 +18,9 @@
 \usepackage{amsmath}
 \usepackage{esvect}
 \usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
 
 % https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
 \newcommand\blindfootnote[1]{
@@ -29,13 +32,20 @@
 \AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
 
 \begin{document}
-\begin{flushleft}
+\begin{flushright}
   Dean Gadberry
 
-  PHYS 2425
+  NCTC PHYS 2425
 
-  \begin{Question}
-    This
-  \end{Question}
+  \today
+\end{flushright}
+\begin{center}
+  {\large title}
+\end{center}
+\begin{flushleft}
+
+  \section*{heading}
+  \hrule
+  \subsection{subheading}
 \end{flushleft}
 \end{document}
