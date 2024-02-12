@@ -80,6 +80,11 @@
   \section*{PROBLEMS}
   \hrule
   \subsection{1. A car is driven 245 km west and then 118 km southwest (\degree{45}). What is the displacement of the car from the point of origin (magnitude and direction)? Draw a diagram.}
+  \[
+  \vv{a}_x=-245km
+  \vv{b}_x=83.44
+  \vv{b}_y=83.44
+\]
   \subsection{2. If $V_x=9.40$ units and $V_y=-6.80$ units, determine the magnitude and direction of \vv{V}}
   \[
     tan^{-1}(\frac{9.40}{-6.80})=-54.1^\circ
@@ -123,7 +128,36 @@
   magnitude: 4580m
   \subsection{10. Three vectors magnitudes are given in arbitrary units. Determine the sum of the three vectors. Give the resultant in terms of}
   \subsubsection{(a) components}
+  \begin{tabular}{c|ccccc}
+    Vector & Resultant & Degree & Calculations & \vv{V}_x & \vv{V}_y \\
+    \hline
+    \\
+    \vv{A} & 42.0 & 28.0 
+           & \vv{A}_x=42cos(28) 
+           & 37.08\\
+    _&&&\vv{A}_y=42sin(28) 
+     & & 19.72\\
+    \\
+    \vv{B} & 29.7 & 56.0 
+           & \vv{B}_x=29.7cos(56.0)
+           & -16.61\\
+    _&&&\vv{B}_y=29.7sin(56.0) 
+     & & 24.62\\
+    \\
+    \vv{C} & 31.0 &
+           &&&-31.0\\
+    _&\\
+    \hline
+    \hline
+    \\
+    \vv{D} &&&\vv{D}_x=37.08-16.61&20.47\\
+           &&&\vv{D}_y=19.72+24.62-31.0&&13.34\\
+           &&33.09&$tan^{-1}(\frac{13.34}{20.47})$\\
+           &24.43&&\vv{D}_R=\sqrt{(13.34)^2+(20.47)^2}\\
+    \hline
+  \end{tabular}
   \subsubsection{(b) magnitude and angle with the +x axis}
+  \vv{D}=24.43\angle 33.09^\circ
   \subsection{32. A tiger leaps horizontally from a 7.5-m-high rock with a speed of 3.0m/s. How far from the base of the rock will he land?}
   \[
     \Delta y=v_{0y}t-\frac{1}{2}gt^2 \implies -7.5=-4.9t^2\implies
@@ -158,6 +192,25 @@
   t=0.09s
 \]
   \subsection{47. A rescue plane wants to drop supplies to isolated mountain climbers on a rocky ridge 265m below. If the plane is traveling horizontally with a speed of 125km/h, how far in advance of the recipients (horizontal distance) must the goods be dropped?}
+  Given:
+\[
+  \Delta y = -265m
+\]
+  \[
+  v_{x0} =34.72m/s=\biggr( \frac{125km}{h} \times \frac{1h}{3600s}\times \frac{1000m}{1km}\biggr)
+\]
 
+Find: \Delta x\\
+\[
+  \Delta y=v_{y0}t-\frac{1}{2}gt^2\implies
+  -265=-4.9t^2\implies
+  t=\sqrt{\frac{-265}{-4.9}}\implies
+  t=7.354
+\]
+\[
+  \Delta x=v_{x0}t\implies
+  \Delta x=(34.72m/s)(7.354s)\implies
+  \Delta x=255.3m
+\]
 \end{flushleft}
 \end{document}
