@@ -1,0 +1,77 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibd
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushright}
+  Dean Gadberry
+
+  NCTC PHYS 2425
+
+  \today
+\end{flushright}
+\begin{center}
+  {\large Chapter 5 Homework}
+\end{center}
+\begin{flushleft}
+
+  \section*{Questions}
+  \hrule
+  \subsection{11. Sometimes it is said that water is removed from clothes in a spin dryer by centrifugal force throwing the water outward. Is this correct? Discuss.}
+  \subsection{15. Astronauts who spend long periods in outer space could be adversely affected by weightlessness. One way to simulate gravity is to shape the spaceship like a cylindrical shell that rotates with the astronauts walking on the inside surface. Explain how this simulates gravity. Consider...}
+  \subsubsection{(a) how objects fall}
+  \subsubsection{(b) the force we feel on our feet}
+  \subsubsection{(c) any other aspects of gravity you can think of}
+  \section*{Misconception Questions}
+  \hrule
+  \subsection{3. Which of the following point towards the center of the circle in uniform circular motion?}
+  \subsection{7. While driving fast around a sharp right turn, you find yourself pressing against the left car door. What is happening?}
+  \subsection{9. What supplies the force that keeps a car on the road as it rounds a curve?}
+  \subsection{10. You are flung sideways when your car travels around a sharp curve because }
+  \section*{Problems}
+  \hrule
+  \subsection{1. If the coefficient of kinetic friction between a 26-kg crate and the floor is 0.30, what horizontal force is required to move the crate at a steady speed across the floor? What horizontal force is required if $\mu_k$ is zero?}
+  \subsection{2. A force of 35.0 N is required to start a 4.0-kg box moving across a horizontal concrete floor.}
+  \subsubsection{(a) What is the coefficient of static friction between the box and the floor?}
+  \subsubsection{(b) If the 35.0-N force continues, the box accelerates at 0.60m/s$^2$. What is the coefficient of kinetic friction?}
+  \subsection{4. The coefficient of static friction between hard rubber and normal street pavement is about 0.90. On how steep a hill (maximum angle) can you leave a car parked?}
+  \subsection{16. Police investigators, examining the scene of an accident involving a car and an old truck, measure 72-m-long skid marks for the truck, which nearly came to a stop before colliding with the car at rest. The coefficient of kinetic friction between rubber and the pavement is about 0.80. Estimate the initial speed of the truck assuming a level road.}
+  \subsection{20. The crate lies on a plane tilted at an angle $\Theta=$\degree{25.0} to the horizontal, with $\mu_k=0.19$.}
+  \subsubsection{(a) Determine the acceleration of the crate as it slides down the plane.}
+  \subsubsection{(b) If the crate starts from rest 8.75 m up the plane from its base, what will be the crate's speed when it reaches the bottom of the incline?}
+  \subsection{35. What is the maximum speed with which a 1200-kg car can round a turn of radius 90.0m on a flat road if the coefficient of static friction between tires and road is 0.65? }
+  \subsubsection{Is this result independent of the mass of the car?}
+  \subsection{39. How large must the coefficient of static friction be between the tires and the road if a car is to round a level curve of radius 85m at a speed of 95km/h?}
+  \subsection{80. A coffee cup on the horizontal dashboard of a car slides forward when the driver decelerates from 45km/h to rest in 3.5s or less, but not if he decelerates in a longer time. What is the coefficient of static friction between the cup and the dash? Assume the road and the dashboard are level (horizontal).}
+  \subsection{85. In a "Rotor-ride" at a carnival, people rotate in a vertical cylindrically walled "room." If the room radius is 5.5m, and the rotation frequency 0.50 revolutions per second when the floor drops out, what minimum coefficient of static friction keeps the people from slipping down? People on this ride said they were "pressed against the wall." Is there really an outward foce pressing them against the wall? If so, what is its source? If not, what is the proper description of their situation (besides nausea)?[Hint: Draw a free-body diagram for a person.]}
+\end{flushleft}
+\end{document}
