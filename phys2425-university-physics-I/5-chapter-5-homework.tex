@@ -120,11 +120,81 @@
   \subsection{16. Police investigators, examining the scene of an accident involving a car and an old truck, measure 72-m-long skid marks for the truck, which nearly came to a stop before colliding with the car at rest. The coefficient of kinetic friction between rubber and the pavement is about 0.80. Estimate the initial speed of the truck assuming a level road.}
   \subsection{20. The crate lies on a plane tilted at an angle $\Theta=$\degree{25.0} to the horizontal, with $\mu_k=0.19$.}
   \subsubsection{(a) Determine the acceleration of the crate as it slides down the plane.}
+  \begin{align*}
+    \Sigma F_x: mgsin\Theta-F_{fr}&=ma
+      &\Sigma F_y: F_N-mgcos\Theta&=0
+      \\
+    &&F_N&=mgcos\Theta
+      \\
+    \frac{mgsin\Theta}{m}-\frac{0.19(mgcos\Theta)}{m}&=\frac{ma}{m}
+    \\
+    (9.8)sin(25)-0.19(9.8)cos(25)&=a
+    \\
+                                 2.45m/s^2&=a
+  \end{align*}
   \subsubsection{(b) If the crate starts from rest 8.75 m up the plane from its base, what will be the crate's speed when it reaches the bottom of the incline?}
+  \begin{align*}
+    v^2&=v_0^2+2a\Delta x
+    \\
+    v^2&=0+2(2.45m/s^2)(8.75m)
+    \\
+    v&=\sqrt{42.875m^2/s^2}
+    \\
+    v&=6.55m/s
+  \end{align*}
   \subsection{35. What is the maximum speed with which a 1200-kg car can round a turn of radius 90.0m on a flat road if the coefficient of static friction between tires and road is 0.65? }
+  \begin{align*}
+    \Sigma F_x: F_{fr}&=ma
+      &\Sigma F_y: F_N-mg&=0
+      \\
+    \mu\times F_N&=ma
+                 &F_N&=mg
+                 \\
+    \mu\times mg&=ma
+                &F_N&=11,760N
+                \\
+    \mu\times g&=a
+    \\
+  \end{align*}
+  \begin{align*}
+    \frac{v^2}{r}=a \rightarrow 
+    \frac{v^2}{r}=\mu\times g \rightarrow
+    v&=\sqrt{\mu\times g \times r}
+    \\
+    v&=\sqrt{(0.65)(9.8m/s^2)(90.0m)}
+    \rightarrow
+    v=23.9m/s
+  \end{align*}
   \subsubsection{Is this result independent of the mass of the car?}
+  Yes. The mass of the object cancels out in the algebra.
   \subsection{39. How large must the coefficient of static friction be between the tires and the road if a car is to round a level curve of radius 85m at a speed of 95km/h?}
+  \begin{align*}
+    v^2&=\mu gr & 
+    \frac{95km}{h}\times\frac{(1000m)(1h)}{(1km)(3600s)}&=26.38m/s
+    \\
+    \mu&=\frac{v^2}{gr}
+    \\
+    \mu&=\frac{(26.38m/s)^2}{(9.8m/s^2)(85m)}
+    \\
+    \mu&=0.84
+  \end{align*}
   \subsection{80. A coffee cup on the horizontal dashboard of a car slides forward when the driver decelerates from 45km/h to rest in 3.5s or less, but not if he decelerates in a longer time. What is the coefficient of static friction between the cup and the dash? Assume the road and the dashboard are level (horizontal).}
+  \begin{align*}
+    \mu\times g&=a
+               &v&=v_0+at
+               \\
+              \mu&=\frac{a}{g}&v-v_0&=at
+               \\
+               &&\frac{v-v_0}{t}&=a 
+               \\
+               && \frac{45km}{h}\times\frac{(1000m)(h)}{(3600s)(km)}\rightarrow\frac{12.5m/s}{3.5s}&=a
+               \\
+               &&3.57m/s^2&=a
+               \\
+    \mu&=\frac{3.57m/s^2}{9.8m/s^2}
+    \\
+    \mu&=0.36
+  \end{align*}
   \subsection{85. In a "Rotor-ride" at a carnival, people rotate in a vertical cylindrically walled "room." If the room radius is 5.5m, and the rotation frequency 0.50 revolutions per second when the floor drops out, what minimum coefficient of static friction keeps the people from slipping down? People on this ride said they were "pressed against the wall." Is there really an outward foce pressing them against the wall? If so, what is its source? If not, what is the proper description of their situation (besides nausea)?[Hint: Draw a free-body diagram for a person.]}
 \end{flushleft}
 \end{document}
