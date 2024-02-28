@@ -1,0 +1,74 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibited
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushright}
+  Dean Gadberry
+
+  NCTC PHYS 2425
+
+  \today
+\end{flushright}
+\begin{center}
+  {\large Chapter 6 Homework}
+\end{center}
+\begin{flushleft}
+
+  \section*{Questions}
+  \hrule
+  \subsection{3. Will an object weigh more at the equator or at the poles? What two effects are at work? Do they oppose each other?}
+  An object will weigh more at the poles than at the equator. The two effects are gravity and centripetal force. Centripetal force tangentially opposes gravity.
+  \subsection{10. Would it require less speed to launch a satellite (a) toward the east or (b) toward the west? Consider the Earth's rotation direction, and explain your choice.}
+  The Sun rises in the East and sets in the West. This zetetic phenomenon is a feature of the Earth spinning in the Easterly direction. Were the Earth some play-thing, objects released as it spins would tend to continue East. Thus, it would require less speed to launch a satellite (a) toward the east.
+  \section*{Misconception Questions}
+  \hrule
+  \subsection{2. In the international Space Station which orbits Earth, astronauts experience apparent weightlessness because}
+  (c) the astronauts and the station are in free fall towards the center of the Earth.
+  \subsection{3. Which pulls harder gravitationally, the Earth on the Moon, or the Moon on the Earth? Which accelerates more?}
+  (f) Both the same; the Moon.
+  \subsection{6. As you travel away from Earth's surface,}
+  (a) your weight decreases and your mass remains the same. 
+  \section*{Problems}
+  \hrule
+  \subsection{1. Calculate the force of Earth's gravity on a spacecraft 2.00 Earth radii above the Earth's surface if its mass is 1650 kg.}
+  \subsection{4. A hypothetical planet has a radius 2.5 times that of Earth, but has the same mass. What is the acceleration due to gravity hear its surface?}
+  \subsection{5. A hypothetical planet has a mass 2.80 times that of Earth, but has the same radius. What is g near its surface?}
+  \subsection{31. What will a spring scale read for the weight of a 58.0-kg woman in an elevator that moves...}
+  \subsubsection{(a) upward with constant speed 4.4m/s}
+  \subsubsection{(b) downward with constant speed 4.4m/s}
+  \subsubsection{(c) with an upward acceleration 0.18g}
+  \subsubsection{(d) with a downward acceleration 0.18g}
+  \subsubsection{(e) in free fall?}
+  \subsection{32. Astronomers using the Hubble Space Telescope deduced the presence of an extremely massive core in the distant galaxy M87, so dense that it could be a black hole (from which no light escapes). They did this by measuring the speed of gas clouds orbiting the core to be 780km/s at a distance of 60 light-years ($=5.7\times10^{17}m$) from the core. Deduce the mass of the core, and compare it to the mass of our Sun.}
+\end{flushleft}
+\end{document}
