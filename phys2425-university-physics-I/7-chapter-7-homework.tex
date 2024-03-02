@@ -1,0 +1,151 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibited
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushright}
+  Dean Gadberry
+
+  NCTC PHYS 2425
+
+  \today
+\end{flushright}
+\begin{center}
+  {\large Chapter 7 Homework}
+\end{center}
+\begin{flushleft}
+
+  \section*{Questions}
+  \hrule
+  \subsection{11. If the speed of a particle doubles, by what factor does its kinetic energy increase?}
+  \begin{align*}
+    k=\frac{1}{2}mv^2       \rightarrow
+    k=\frac{1}{2}m(2v)^2    \rightarrow
+    k=\frac{1}{2}m(2)^2(v)^2\rightarrow
+    k=\frac{1}{2}m(4)(v)^2
+  \end{align*}
+  Because kinetic energy is exponentially related to velocity, the kinetic energy of a particle, for which speed doubles, would quadruple. There was an interesting example of this phenomenon demonstrated in class, in which the distance to stop a car was compared for various speeds.
+  \section*{Misconception Questions}
+  \hrule
+  \subsection{2. You are carrying a 10-kg bag and moving at constant speed. In which case will you do the most work on the bag?}
+  (d) Climb up a 5-m-tall slope.
+  \subsection{5. If you push twice as hard against a stationary brick wall, the amount of work you do}
+  (d) is zero.
+  \subsection{7. A delivery man carrying a package walks up the stairs to the second floor at constant speed (A), and along the hall at a constant speed (B). He accelerates to a run and then moves at a greater constant speed along the hall. During what portions of his motion is the delivery man doing work on the package? (ignore friction)}
+  (b) C only.
+  \section*{Problems}
+  \hrule
+  \subsection{1. How much work is done by gravitational force when a 280-kg pile driver falls 3.80m?}
+Earth's mass and radius are $m_E=5.98\times10^{24}kg$ and $r_E=6.38\times10^6m$
+  \begin{align*}
+    W&=F_{||}d
+     &
+    F_G&=G\frac{m_1m_2}{r^2} 
+    \\
+     &
+     &
+    F_G&=G\frac{m_Em_P}{(r_E+3.80)^2} 
+    \\
+     &
+     &
+    F_G&=(6.67\times10^{-11}N\frac{m^2}{kg^2})\frac{(5.98\times10^{24}kg)(280kg)}{(6.38\times10^6m+3.80m)^2} 
+    \\
+    W&=(2743N)(3.80m)
+     &
+    F_G&=2743.74N
+    \\
+    W&=10426J
+    \\
+    W&=1.0\times10^4J
+  \end{align*}
+  \subsection{3. A 55.0-kg firefighter climbs a flight of stairs 28.0 m high at constant speed. How much work does she do?}
+  \begin{align*}
+    W&=F_{||}d
+     &
+    \Sigma F_y=F_H-mg
+     &=0
+     \\
+     &
+     &
+  F_H&=mg
+     \\
+  W&=mgd
+  \\
+  W&=(55.0kg)(9.8m/s^2)(28.0m)
+  \\
+  W&=15092J
+  \\
+  W&=1.5\times10^{4}J
+  \end{align*}
+  \subsection{18. What is the dot product of $\vv{A}=2.0x^2\hat{i}-4.0x\hat{j}+5.0\hat{k}$ and $\vv{B}=11.0\hat{i}+2.5x\hat{j}$?}
+  \begin{align*}
+    \vv{A}\cdot\vv{B}&=A_xB_x+A_yB_y+A_zB_z
+    \\
+                     &=(2.0x^2)(11.0)+(-4.0x)(2.5x)+(5.0)(0)
+                     \\
+                     &=22x^2-10x^2+0
+                     \\
+                     &=12x^2
+  \end{align*}
+  \subsection{24. A constant force $\vv{F}=(2.0\hat{i}+4.0\hat{j})N$ acts on an object as it moves along a straight-line path. If the object's displacement is $\vv{d}=(1.0\hat{i}+5.0\hat{j})m$, calculate the work done by $\vv{F}$ using these alternate ways of writing the dot product:}
+  \begin{align*}
+$(a)$W&=Fdcos\Theta
+      &
+$(b)$W&=F_xd_x+F_yd_y
+      \\
+      &=\Bigr(\sqrt{(2.0)^2+(4.0)^2}N\Bigr)(5.0m)
+      &
+      &=(2.0N)(1.0m)+(4.0N)(5.0m)
+      \\
+      W&=22J
+      &
+      W&=22J
+  \end{align*}
+  \subsection{29. Let $\vv{V}=20.0\hat{i}+26.0\hat{j}-14.0\hat{k}$. What angles does this vector make with the $x$, $y$, and $z$ axes?}
+  \begin{align*}
+    55.9^\circ
+    \\
+    43.2^\circ
+    \\
+    113^\circ
+    \\
+  \end{align*}
+  \subsection{37. A spring has $k=65N/m$. Draw a graph like that in Fig. 7-11 and use it to determine the work needed to stretch the spring from $x=3.02cm$ to $x=7.5cm$, where $x=0$ refers to the spring's unstretched length.}
+  \subsection{39. The net force exerted on a particle acts in the positive x direction. Its magnitude increases linearly from zero at x=0, to 380N at x=3.0m. It remains constant at 380N from x=3.0m to x=7.0m, and then decreasees linearly to zero at x=12.0m. Determine the work done to move the particle from x=0 to x=12.0m graphically, by determining the area under the F_x versus x graph.}
+  \subsection{56. How much work is required to stop an electron $(m=9.11\times10^{-31}kg)$ which is moving with a speed of $1.10\times10^6m/s$?}
+  \subsection{62. At an accident scene on a level road, investigators measure a car's skid mark to be 78m long. It was a rainy day and the coefficient of friction was estimated to be 0.30.}
+  \subsubsection{(a) Use these data to determine the speed of the car when the driver slammed on (and locked) the brakes.}
+  \subsubsection{(b) Why does the car's mass not matter?}
+  \subsubsection{(c) What is wrong with a car that skids (see page 131)?}
+  \subsection{74. Spiderman uses his spider webs to save a runaway train moving about $60km/h$. His web stretches a few city blocks ($500 m$) before the $10^4kg$ train comes to a stop. Assuming the web acts like a spring, estimate the effective spring constant.}
+\end{flushleft}
+\end{document}
