@@ -132,20 +132,87 @@ $(b)$W&=F_xd_x+F_yd_y
   \end{align*}
   \subsection{29. Let $\vv{V}=20.0\hat{i}+26.0\hat{j}-14.0\hat{k}$. What angles does this vector make with the $x$, $y$, and $z$ axes?}
   \begin{align*}
+    R=\sqrt{(20.0)^2+(26.0)^2+(-14.0)^2}&=35.7
+    \\
+    \Theta_x=arccos\frac{20.0}{35.7}&=
     55.9^\circ
     \\
+    \Theta_y=arccos\frac{26.0}{35.7}&=
     43.2^\circ
     \\
+    \Theta_z=arccos\frac{-14.0}{35.7}&=
     113^\circ
     \\
   \end{align*}
   \subsection{37. A spring has $k=65N/m$. Draw a graph like that in Fig. 7-11 and use it to determine the work needed to stretch the spring from $x=3.02cm$ to $x=7.5cm$, where $x=0$ refers to the spring's unstretched length.}
-  \subsection{39. The net force exerted on a particle acts in the positive x direction. Its magnitude increases linearly from zero at x=0, to 380N at x=3.0m. It remains constant at 380N from x=3.0m to x=7.0m, and then decreasees linearly to zero at x=12.0m. Determine the work done to move the particle from x=0 to x=12.0m graphically, by determining the area under the F_x versus x graph.}
+  \begin{align*}
+    W&=\frac{1}{2}kx^2
+    \\
+    W_1&=\frac{1}{2}(65N/m)(0.0302m)
+       &
+       &
+       &
+    W_2&=\frac{1}{2}(65N/m)(0.075m)
+    \\
+    W_1&=0.9815J
+       &
+       &
+       &
+    W_2&=2.4375J
+    \\
+       &
+       &
+    W_2-W_1&=1.5J
+  \end{align*}
+  \subsection{39. The net force exerted on a particle acts in the positive x direction. Its magnitude increases linearly from zero at $x=0$, to $380N$ at $x=3.0m$. It remains constant at $380N$ from $x=3.0m$ to $x=7.0m$, and then decreasees linearly to zero at $x=12.0m$. Determine the work done to move the particle from $x=0$ to $x=12.0m$ graphically, by determining the area under the $F_x$ versus $x$ graph.}
+  \begin{align*}
+    W&=\frac{1}{2}(380N)(3.0m)+(380N)(4.0m)+\frac{1}{2}(380N)(5)
+    \\
+    W&=3040J
+  \end{align*}
   \subsection{56. How much work is required to stop an electron $(m=9.11\times10^{-31}kg)$ which is moving with a speed of $1.10\times10^6m/s$?}
+  \begin{align*}
+    W&=\frac{1}{2}mv_1^2-\frac{1}{2}mv_2^2
+    %\rightarrow 
+    %W=\frac{1}{2}(mv_1^2-mv_2^2)
+    \\
+  W&=\frac{1}{2}(9.11\times10^{-31}kg)(1.10\times10^6m/s)^2-0
+  \\
+  W&=5.51\times10^{-19}J
+  \end{align*}
   \subsection{62. At an accident scene on a level road, investigators measure a car's skid mark to be 78m long. It was a rainy day and the coefficient of friction was estimated to be 0.30.}
   \subsubsection{(a) Use these data to determine the speed of the car when the driver slammed on (and locked) the brakes.}
+  \begin{align*}
+    \Sigma F_x=0-F_{fr}
+    &=ma
+    &
+    \Sigma F_y=F_N-mg&=0
+    \\
+    -\mu F_N&=ma
+            &
+    F_N&=mg
+    \\
+    -\mu mg&=ma
+           &
+           &&v_f^2&=v_0^2+2a\Delta x
+    \\
+    -\mu g&=a
+    %(0.30)(9.8m/s^2)=2.94m/s^2
+          &
+          &&v_f^2&=v_0^2+2(^-\mu g)\Delta x
+    \\
+          &&&&v_0&=\sqrt{2\mu g\Delta x}
+          \\
+          &&&&v_0&=\sqrt{2(0.30)(9.8m/s^2)(78m)}
+          \\
+          &&&&v_0&=21.4m/s
+  \end{align*}
   \subsubsection{(b) Why does the car's mass not matter?}
+  The mass of the car is included in each of the sumation of force equations. When these equations are substitued into one another, the mass is algebraically irrelevant.
   \subsubsection{(c) What is wrong with a car that skids (see page 131)?}
+  The car which skids is losing traction. Maybe the vehicle-owner needs new tires on his old Corolla! And the car may have faulty Anti-lock-braking.
   \subsection{74. Spiderman uses his spider webs to save a runaway train moving about $60km/h$. His web stretches a few city blocks ($500 m$) before the $10^4kg$ train comes to a stop. Assuming the web acts like a spring, estimate the effective spring constant.}
+  \begin{align*}
+  \end{align*}
 \end{flushleft}
 \end{document}
