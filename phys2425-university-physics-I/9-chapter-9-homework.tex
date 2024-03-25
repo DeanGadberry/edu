@@ -1,0 +1,132 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibited
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushright}
+  Dean Gadberry
+
+  NCTC PHYS 2425
+
+  \today
+\end{flushright}
+\begin{center}
+  {\large Chapter 9 Homework}
+\end{center}
+\begin{flushleft}
+
+  \section*{Questions}
+  \hrule
+  \subsection{11. Is it possible for an object to receive a larger impulse from a small force than from a large force? Explain.}
+  Yes, because impulse is a function of force over time, if a small force is applied for a smaller amount of time, the impulse can be enlargened.
+  \subsection{15. Cars used to be built as rigid as possible to withstand collisions. Today, though, cars are designed to have "crumple zones" that collapse upon impact. What is the advantage of this new design?}
+  This new design distributes force applied to the crumple zone over a larger time period. This limits the impulse to the passengers.
+
+  \section*{Misconception Questions}
+  \hrule
+  \subsection{1. Two children float motionlessly in a space station. The 20-kg girl pushes on the 40-kg boy and he sails away at 1.0m/s. The girl}
+  (d) moves in the opposite direction at 2.0 m/s
+  \subsection{2. A small boat coasts at constant speed under a bridge. A heavy sack of sand is dropped from the bridge onto the boat. The speed of the boat}
+  (b) decreases
+  \subsection{4. A space vehicle, in circular orbit around the Earth, collides with a small asteroid which ends up in the vehicle's storage bay. For this collision, }
+  (a) only momentum is conserved
+  \subsection{6. You are lying in bed and want to shut your bedroom door. You have a bouncy ball and a blob of clay, both with the same mass. Which one would be more effective to throw at your door to close it?}
+  (a) The blob of clay
+  \subsection{10. A truck going 15 km/h has a head-on collision with a small car going 30 km/h. Which statement best describes the situation?}
+  (d) They both have the same change in magnitude of momentum because momentum is conserved.
+  \subsection{12. Inelastic and elastic collisions are similar in that}
+  (b) momentum is conserved in both.
+
+  \section*{Problems}
+  \hrule
+  \subsection{2. A 7150-kg railroad car travels alone on a level frictionless track with a constant speed of 15.0m/s. A 3650-kg load, initially at rest, is dropped onto the car. What will be the car's new speed?}
+  \begin{align*}
+    m_1v_1+m_2v_2&=m_1v_1^\prime+m_2v_2^\prime
+    \\
+    7150kg(15.0m/s)+3650kg(0m/s)&=(7150kg+3650kg)v^\prime
+    \\
+    \frac{7150kg(15.0m/s)}{7150kg+3650kg}&=v^\prime
+    \\
+    \frac{715}{72}&=v^\prime=9.93m/s
+  \end{align*}
+  \subsection{3. A 110-kg tackler moving at 2.5m/s meets head/on (and holds on to) an 82-kg halfback moving at 4.4m/s. What will be their mutual speed immediately after the collision?}
+  \begin{align*}
+    m_1v_1+m_2v_2&=m_1v_1^\prime+m_2v_2^\prime
+    \\
+    110kg(2.5m/s)-82kg(4.4m/s)&=(110kg+82kg)v^\prime
+    \\
+    \frac{110kg(2.5m/s)-82kg(4.4m/s)}{110kg+82kg}&=v^\prime=0.45m/s
+  \end{align*}
+  \subsection{6. A 22-g bullet traveling 240 m/s penetrates a 2.0-kg block of wood and emerges going 130 m/s. If the block is stationary on a frictionless surface when hit, how fast does it move after the bullet emerges?}
+%  \begin{align*}
+%    m_1v_1+m_2v_2&=m_1v_1^\prime+m_2v_2^\prime
+%    \\
+%  (0.022kg)(240m/s)+(2.0kg)(0m/s)&=(0.022kg)(130m/s)+(2.0kg)v^\prime
+%  \\
+%  (0.022kg)(240m/s)-(0.022kg)(130m/s)&=(2.0kg)v^\prime
+%  \\
+%  \frac{(0.022kg)(240m/s)-(0.022kg)(130m/s)}{2.0kg}&=v^\prime=1.21m/s
+%  \end{align*}
+%  \begin{align*}
+%    v_1-v_2&=-v_1^\prime+v_2^\prime
+%    \\
+%    240m/s-0&=-130m/s+v_2^\prime
+%    \\
+%    \frac{240m/s}{-130m/s}&=v_2^\prime
+%    \\
+%  \end{align*}
+  \subsection{18. }
+  \begin{align*}
+  \end{align*}
+  \subsection{19. }
+  \begin{align*}
+  \end{align*}
+  \subsection{29. }
+  \begin{align*}
+  \end{align*}
+  \subsection{47. }
+  \begin{align*}
+  \end{align*}
+  \subsection{55. }
+  \begin{align*}
+  \end{align*}
+  \subsection{56. }
+  \begin{align*}
+  \end{align*}
+  \subsection{57. }
+  \begin{align*}
+  \end{align*}
+  \subsection{79. }
+  \begin{align*}
+  \end{align*}
+\end{flushleft}
+\end{document}
