@@ -1,0 +1,113 @@
+% Copyright (C) Dean Gadberry - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibited
+% Proprietary and confidential
+% Written by Dean Gadberry <dean@deangadberry.com>, 2023
+
+\documentclass[12pt,a4paper,english]{article}
+\usepackage{helvet}         % set font to helvetica
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}        % allow redefinition of section command formatting
+    \allsectionsfont{\normalsize}
+\usepackage[centering,noheadfoot,margin=1in]{geometry}
+\usepackage{lipsum}
+\setlength{\parindent}{0em}
+\usepackage{parskip}
+\usepackage{hanging}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{currfile}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\degree}[1]{${#1}^\circ$}
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blindfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+\AtEndDocument{\blindfootnote{\textrm{This document proudly made using \LaTeX{}}}}
+
+\begin{document}
+\begin{flushright}
+  Dean Gadberry
+
+  NCTC PHYS 2425
+
+  \today
+\end{flushright}
+\begin{center}
+  {\large Chapter 10 Homework}
+\end{center}
+\begin{flushleft}
+
+  \section*{Questions}
+  \hrule
+  \subsection{11. A book has three symmetry axes through its center, all mutually perpendicular. The book's moment of inertia would be smallest about which of the three? Explain. }
+  \begin{align*}
+  \end{align*}
+  \subsection{16. }
+  \begin{align*}
+  \end{align*}
+
+  \section*{Misconception Questions}
+  \hrule
+  \subsection{2. }
+  \begin{align*}
+  \end{align*}
+  \subsection{4. }
+  \begin{align*}
+  \end{align*}
+  \subsection{5. }
+  \begin{align*}
+  \end{align*}
+  \subsection{6. }
+  \begin{align*}
+  \end{align*}
+  \subsection{7. }
+  \begin{align*}
+  \end{align*}
+  \subsection{8. }
+  \begin{align*}
+  \end{align*}
+  \subsection{13. }
+  \begin{align*}
+  \end{align*}
+
+  \section*{Problems}
+  \hrule
+  \subsection{1. }
+  \begin{align*}
+  \end{align*}
+  \subsection{5. }
+  \begin{align*}
+  \end{align*}
+  \subsection{9. }
+  \begin{align*}
+  \end{align*}
+  \subsection{12. }
+  \begin{align*}
+  \end{align*}
+  \subsection{21. }
+  \begin{align*}
+  \end{align*}
+  \subsection{30. }
+  \begin{align*}
+  \end{align*}
+  \subsection{33. }
+  \begin{align*}
+  \end{align*}
+  \subsection{37. }
+  \begin{align*}
+  \end{align*}
+  \subsection{45. }
+  \begin{align*}
+  \end{align*}
+  \subsection{81. }
+  \begin{align*}
+  \end{align*}
+\end{flushleft}
+\end{document}
